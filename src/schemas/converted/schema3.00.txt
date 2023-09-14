@@ -1,0 +1,3881 @@
+&CteValCodigo = 1
+&CteValTag = 'CTe'
+&CteValTagDescricao = 'CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 142
+&CteValMsgErro = ''
+&CteValTagPai = ''
+
+&CteValCodigo = 2
+&CteValTag = 'infCte'
+&CteValTagDescricao = 'Informações do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 143
+&CteValMsgErro = ''
+&CteValTagPai = 1
+
+&CteValCodigo = 3
+&CteValTag = 'ide'
+&CteValTagDescricao = 'Identificação do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 144
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 4
+&CteValTag = 'cUF'
+&CteValTagDescricao = 'Código da UF do emitente do CT-e.'
+&CteValRegEx = '^11$|^12$|^13$|^14$|^15$|^16$|^17$|^21$|^22$|^23$|^24$|^25$|^26$|^27$|^28$|^29$|^31$|^32$|^33$|^35$|^41$|^42$|^43$|^50$|^51$|^52$|^53$'
+&CteValCodMsgErro = 140
+&CteValMsgErro = '[#inv0140] Código da UF do emitente do CT-e. não possui um valor válido. Para [cUF] utilize a Tabela do IBGE.'
+&CteValTagPai = 3
+
+&CteValCodigo = 5
+&CteValTag = 'cCT'
+&CteValTagDescricao = 'Código numérico que compõe a Chave de Acesso.'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 145
+&CteValMsgErro = '[#inv0145] Código numérico que compõe a Chave de Acesso. não possui um valor válido. Para [cCT] informe um número aleatório gerado pelo emitente para cada CT-e, com o objetivo de evitar acessos indevidos ao documento.'
+&CteValTagPai = 3
+
+&CteValCodigo = 6
+&CteValTag = 'CFOP'
+&CteValTagDescricao = 'Código Fiscal de Operações e Prestações'
+&CteValRegEx = '^[123567][0-9]([0-9][1-9]|[1-9][0-9])$'
+&CteValCodMsgErro = 118
+&CteValMsgErro = '[#inv0118] Código Fiscal de Operações e Prestações não possui um valor válido. Para [CFOP] informe 4 números, sendo o primerio dígito entre 1 e 7.'
+&CteValTagPai = 3
+
+&CteValCodigo = 7
+&CteValTag = 'natOp'
+&CteValTagDescricao = 'Natureza da Operação'
+&CteValRegEx = '^.{1,60}$'
+&CteValCodMsgErro = 146
+&CteValMsgErro = '[#inv0146] Natureza da Operação não possui um valor válido. Para [natOp] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 3
+
+&CteValCodigo = 8
+&CteValTag = 'forPag'
+&CteValTagDescricao = 'Forma de pagamento do serviço'
+&CteValRegEx = '^0$|^1$|^2$'
+&CteValCodMsgErro = 147
+&CteValMsgErro = '[#inv0147] Forma de pagamento do serviço não possui um valor válido. Para [forPag] preencha com: 0 - Pago; 1 - A pagar; 2 - Outros'
+&CteValTagPai = 3
+
+&CteValCodigo = 9
+&CteValTag = 'mod'
+&CteValTagDescricao = 'Modelo do documento fiscal'
+&CteValRegEx = '^57$'
+&CteValCodMsgErro = 127
+&CteValMsgErro = '[#inv0127] Modelo do documento fiscal não possui um valor válido. Para [mod] utilize o código 57 para identificação do CT-e, emitido em substituição aos modelos de conhecimentos em papel.'
+&CteValTagPai = 3
+
+&CteValCodigo = 10
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série do CT-e'
+&CteValRegEx = '^0$|^[1-9]{1}[0-9]{0,2}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série do CT-e não possui um valor válido. Para [serie] informe um número entre 1 e 3 dígitos ou preencha com 0 no caso de série única'
+&CteValTagPai = 3
+
+&CteValCodigo = 11
+&CteValTag = 'nCT'
+&CteValTagDescricao = 'Número do CT-e'
+&CteValRegEx = '^[1-9]{1}[0-9]{0,8}$'
+&CteValCodMsgErro = 148
+&CteValMsgErro = '[#inv0148] Número do CT-e não possui um valor válido. Para [nCT] Informe um número de até 9 dígitos.'
+&CteValTagPai = 3
+
+&CteValCodigo = 12
+&CteValTag = 'dhEmi'
+&CteValTagDescricao = 'Data e hora de emissão do CT-e'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))T(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d([\-,\+](0[0-9]|10|11):00|([\+](12):00))'
+&CteValCodMsgErro = 15
+&CteValMsgErro = '[#inv0015] Data e hora de emissão do CT-e não possui um valor válido. Para [dhEmi] utilize uma data no formato AAAA-MM-DDTHH:MM:SS TZD'
+&CteValTagPai = 3
+
+&CteValCodigo = 13
+&CteValTag = 'tpImp'
+&CteValTagDescricao = 'Formato de impressão do DACTE'
+&CteValRegEx = '^1$|^2$'
+&CteValCodMsgErro = 149
+&CteValMsgErro = '[#inv0149] Formato de impressão do DACTE não possui um valor válido. Para [tpImp] preencha com: 1 - Retrato; 2 - Paisagem.'
+&CteValTagPai = 3
+
+&CteValCodigo = 14
+&CteValTag = 'tpEmis'
+&CteValTagDescricao = 'Forma de emissão do CT-e'
+&CteValRegEx = '^1$|^3$|^4$|^5$|^7$|^8$'
+&CteValCodMsgErro = 150
+&CteValMsgErro = '[#inv0150] Forma de emissão do CT-e não possui um valor válido. Para [tpEmis] preencha com: 1 - Normal; 3 - Regime Especial NFF; 4-EPEC pela SVC; 5 - Contingência FSDA; 7 - Autorização pela SVC-RS; 8 - Autorização pela SVC-SP'
+&CteValTagPai = 3
+
+&CteValCodigo = 15
+&CteValTag = 'cDV'
+&CteValTagDescricao = 'Digito Verificador da chave de acesso do CT-e'
+&CteValRegEx = '^[0-9]{1}$'
+&CteValCodMsgErro = 151
+&CteValMsgErro = '[#inv0151] Digito Verificador da chave de acesso do CT-e não possui um valor válido. Para [cDV] informe o dígito de controle da chave de acesso do CT-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso.'
+&CteValTagPai = 3
+
+&CteValCodigo = 16
+&CteValTag = 'tpAmb'
+&CteValTagDescricao = 'Tipo do Ambiente'
+&CteValRegEx = '^1$|^2$'
+&CteValCodMsgErro = 9
+&CteValMsgErro = '[#inv0009] Tipo do Ambiente não possui um valor válido. Para [tpAmb] preencha com: 1 - Produção; 2 - Homologação'
+&CteValTagPai = 3
+
+&CteValCodigo = 17
+&CteValTag = 'tpCTe'
+&CteValTagDescricao = 'Tipo do CT-e'
+&CteValRegEx = '^0$|^1$|^2$|^3$'
+&CteValCodMsgErro = 152
+&CteValMsgErro = '[#inv0152] Tipo do CT-e não possui um valor válido. Para [tpCTe] preencha com: 0 - CT-e Normal; 1 - CT-e de Complemento de Valores; 2 - CT-e de Anulação; 3 - CT-e Substituto'
+&CteValTagPai = 3
+
+&CteValCodigo = 18
+&CteValTag = 'procEmi'
+&CteValTagDescricao = 'Identificador do processo de emissão do CT-e'
+&CteValRegEx = '^0$|^3$'
+&CteValCodMsgErro = 153
+&CteValMsgErro = '[#inv0153] Identificador do processo de emissão do CT-e não possui um valor válido. Para [procEmi] preencha com: 0 - emissão de CT-e com aplicativo do contribuinte; 3- emissão CT-e pelo contribuinte com aplicativo fornecido pelo SEBRAE.'
+&CteValTagPai = 3
+
+&CteValCodigo = 19
+&CteValTag = 'verProc'
+&CteValTagDescricao = 'Versão do processo de emissão'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 154
+&CteValMsgErro = '[#inv0154] Versão do processo de emissão não possui um valor válido. Para [verProc] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 3
+
+&CteValCodigo = 20
+&CteValTag = 'cMunEnv'
+&CteValTagDescricao = 'Código do Município de envio do CT-e (de onde foi transmitido)'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do Município de envio do CT-e (de onde foi transmitido) não possui um valor válido. Para [cMunEnv] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 21
+&CteValTag = 'xMunEnv'
+&CteValTagDescricao = 'Nome do Município de envio do CT-e (de onde foi transmitido)'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do Município de envio do CT-e (de onde foi transmitido) não possui um valor válido. Para [xMunEnv] informe caracteres entre 2 e 60 dígitos ou PAIS/Municipio para as operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 22
+&CteValTag = 'UFEnv'
+&CteValTagDescricao = 'Sigla da UF de envio do CT-e (de onde foi transmitido)'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF de envio do CT-e (de onde foi transmitido) não possui um valor válido. Para [UFEnv] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 23
+&CteValTag = 'modal'
+&CteValTagDescricao = 'Modal'
+&CteValRegEx = '^01$|^02$|^03$|^04$|^05$|^06$'
+&CteValCodMsgErro = 155
+&CteValMsgErro = '[#inv0155] Modal não possui um valor válido. Para [modal] preencha com: 01-Rodoviário; 02-Aéreo;03-Aquaviário;04-Ferroviário;05-Dutoviário;06 Multimodal;'
+&CteValTagPai = 3
+
+&CteValCodigo = 24
+&CteValTag = 'tpServ'
+&CteValTagDescricao = 'Tipo do Serviço'
+&CteValRegEx = '^0$|^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 156
+&CteValMsgErro = '[#inv0156] Tipo do Serviço não possui um valor válido. Para [tpServ] preencha com: 0 - Normal;1 - Subcontratação; 2 - Redespacho;3 - Redespacho Intermediário; 4 - Serviço Vinculado a Multimodal'
+&CteValTagPai = 3
+
+&CteValCodigo = 25
+&CteValTag = 'cMunIni'
+&CteValTagDescricao = 'Código do Município de início da prestação'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do Município de início da prestação não possui um valor válido. Para [cMunIni] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 26
+&CteValTag = 'xMunIni'
+&CteValTagDescricao = 'Nome do Município do início da prestação'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do Município do início da prestação não possui um valor válido. Para [xMunIni] informe caracteres entre 2 e 60 dígitos ou 'EXTERIOR' para operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 27
+&CteValTag = 'UFIni'
+&CteValTagDescricao = 'UF do início da prestação'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] UF do início da prestação não possui um valor válido. Para [UFIni] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 28
+&CteValTag = 'cMunFim'
+&CteValTagDescricao = 'Código do Município de término da prestação'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do Município de término da prestação não possui um valor válido. Para [cMunFim] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 29
+&CteValTag = 'xMunFim'
+&CteValTagDescricao = 'Nome do Município do término da prestação'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do Município do término da prestação não possui um valor válido. Para [xMunFim] informe caracteres entre 2 e 60 dígitos ou 'EXTERIOR' para operações com o exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 30
+&CteValTag = 'UFFim'
+&CteValTagDescricao = 'UF do término da prestação'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] UF do término da prestação não possui um valor válido. Para [UFFim] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 3
+
+&CteValCodigo = 31
+&CteValTag = 'retira'
+&CteValTagDescricao = 'Indicador se o Recebedor retira'
+&CteValRegEx = '^0$|^1$'
+&CteValCodMsgErro = 157
+&CteValMsgErro = '[#inv0157] Indicador se o Recebedor retira não possui um valor válido. Para [retira] preencha com: 0 - sim; 1 - não'
+&CteValTagPai = 3
+
+&CteValCodigo = 32
+&CteValTag = 'xDetRetira'
+&CteValTagDescricao = 'Detalhes do retira'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 158
+&CteValMsgErro = '[#inv0158] Detalhes do retira não possui um valor válido. Para [xDetRetira] informe caracteres entre 1 e 160 dígitos.'
+&CteValTagPai = 3
+
+&CteValCodigo = 33
+&CteValTag = 'indIEToma'
+&CteValTagDescricao = 'Indicador do papel do tomador na prestação do serviço'
+&CteValRegEx = '^1$|^2$|^9$'
+&CteValCodMsgErro = 570
+&CteValMsgErro = '[#inv0570] Indicador do papel do tomador na prestação não possui um valor válido. Para [indIEToma] informe: 1 – Contribuinte ICMS; 2 – Contribuinte isento de inscrição; 9 – Não Contribuinte'
+&CteValTagPai = 3
+
+&CteValCodigo = 34
+&CteValTag = 'toma03'
+&CteValTagDescricao = 'Indicador do papel do tomador do serviço no CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 159
+&CteValMsgErro = ''
+&CteValTagPai = 3
+
+&CteValCodigo = 35
+&CteValTag = 'toma'
+&CteValTagDescricao = 'Tomador do Serviço'
+&CteValRegEx = '^0$|^1$|^2$|^3$'
+&CteValCodMsgErro = 139
+&CteValMsgErro = '[#inv0139] Tomador do Serviço não possui um valor válido. Para [toma] preencha com: 0-Remetente; 1-Expedidor; 2-Recebedor; 3-Destinatário Serão utilizadas as informações contidas no respectivo grupo, conforme indicado pelo conteúdo deste campo'
+&CteValTagPai = 34
+
+&CteValCodigo = 36
+&CteValTag = 'toma4'
+&CteValTagDescricao = 'Indicador do papel do tomador do serviço no CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 160
+&CteValMsgErro = ''
+&CteValTagPai = 3
+
+&CteValCodigo = 37
+&CteValTag = 'toma'
+&CteValTagDescricao = 'Tomador do Serviço'
+&CteValRegEx = '^4$'
+&CteValCodMsgErro = 139
+&CteValMsgErro = '[#inv0139] Tomador do Serviço não possui um valor válido. Para [toma] preencha com: 4 - Outros Obs: Informar os dados cadastrais do tomador do serviço'
+&CteValTagPai = 36
+
+&CteValCodigo = 38
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}$|^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.'
+&CteValTagPai = 36
+
+&CteValCodigo = 39
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 36
+
+&CteValCodigo = 40
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{0,14}|ISENTO$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe a IE do tomador ou ISENTO se tomador é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o tomador não seja contribuinte do ICMS não informar o conteúdo.'
+&CteValTagPai = 36
+
+&CteValCodigo = 41
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 36
+
+&CteValCodigo = 42
+&CteValTag = 'xFant'
+&CteValTagDescricao = 'Nome Fantasia'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 128
+&CteValMsgErro = '[#inv0128] Nome Fantasia não possui um valor válido. Para [xFant] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 36
+
+&CteValCodigo = 43
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 36
+
+&CteValCodigo = 44
+&CteValTag = 'enderToma'
+&CteValTagDescricao = 'Dados do endereço do tomador'
+&CteValRegEx = ''
+&CteValCodMsgErro = 161
+&CteValMsgErro = ''
+&CteValTagPai = 36
+
+&CteValCodigo = 45
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 44
+
+&CteValCodigo = 46
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 44
+
+&CteValCodigo = 47
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 44
+
+&CteValCodigo = 48
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 44
+
+&CteValCodigo = 49
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 44
+
+&CteValCodigo = 50
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 44
+
+&CteValCodigo = 51
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 44
+
+&CteValCodigo = 52
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 44
+
+&CteValCodigo = 53
+&CteValTag = 'cPais'
+&CteValTagDescricao = 'Código do país'
+&CteValRegEx = '^[0-9]{1,4}$'
+&CteValCodMsgErro = 130
+&CteValMsgErro = '[#inv0130] Código do país não possui um valor válido. Para [cPais] utilize a tabela do BACEN'
+&CteValTagPai = 44
+
+&CteValCodigo = 54
+&CteValTag = 'xPais'
+&CteValTagDescricao = 'Nome do país'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 131
+&CteValMsgErro = '[#inv0131] Nome do país não possui um valor válido. Para [xPais] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 44
+
+&CteValCodigo = 55
+&CteValTag = 'email'
+&CteValTagDescricao = 'Endereço de email'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 36
+
+&CteValCodigo = 56
+&CteValTag = 'dhCont'
+&CteValTagDescricao = 'Data e Hora da entrada em contingência'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))T(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d([\-,\+](0[0-9]|10|11):00|([\+](12):00))'
+&CteValCodMsgErro = 15
+&CteValMsgErro = '[#inv0015] Data e Hora da entrada em contingência não possui um valor válido. Para [dhCont] informe a data e hora no formato AAAAMM-DDTHH:MM:SS'
+&CteValTagPai = 3
+
+&CteValCodigo = 57
+&CteValTag = 'xJust'
+&CteValTagDescricao = 'Justificativa da entrada em contingência'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 162
+&CteValMsgErro = '[#inv0162] Justificativa da entrada em contingência não possui um valor válido. Para [xJust] informe caracteres entre 15 e 256 dígitos.'
+&CteValTagPai = 3
+
+&CteValCodigo = 58
+&CteValTag = 'compl'
+&CteValTagDescricao = 'Dados complementares do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 163
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 59
+&CteValTag = 'xCaracAd'
+&CteValTagDescricao = 'Característica adicional do transporte'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 116
+&CteValMsgErro = '[#inv0116] Característica adicional do transporte não possui um valor válido. Para [xCaracAd] informe caracteres ente 1 e 15 dígitos. Utilize um texto livre: REENTREGA; DEVOLUÇÃO; REFATURAMENTO; etc'
+&CteValTagPai = 58
+
+&CteValCodigo = 60
+&CteValTag = 'xCaracSer'
+&CteValTagDescricao = 'Característica adicional do serviço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 116
+&CteValMsgErro = '[#inv0116] Característica adicional do serviço não possui um valor válido. Para [xCaracSer] informe caracteres ente 1 e 30 dígitos. Utilize um texto livre: ENTREGA EXPRESSA; LOGÍSTICA REVERSA; CONVENCIONAL; EMERGENCIAL; etc'
+&CteValTagPai = 58
+
+&CteValCodigo = 61
+&CteValTag = 'xEmi'
+&CteValTagDescricao = 'Funcionário emissor do CTe'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 164
+&CteValMsgErro = '[#inv0164] Funcionário emissor do CTe não possui um valor válido. Para [xEmi] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 58
+
+&CteValCodigo = 62
+&CteValTag = 'fluxo'
+&CteValTagDescricao = 'Previsão do fluxo da carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 165
+&CteValMsgErro = ''
+&CteValTagPai = 58
+
+&CteValCodigo = 63
+&CteValTag = 'xOrig'
+&CteValTagDescricao = 'Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Origem'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 166
+&CteValMsgErro = '[#inv0166] Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Origem não possui um valor válido. Para [xOrig] informe caracteres ente 1 e 15 dígitos. O código de três letras IATA do aeroporto de partida deverá ser incluído como primeira anotação. Quando não for possível, utilizar a sigla OACI.'
+&CteValTagPai = 62
+
+&CteValCodigo = 64
+&CteValTag = 'pass'
+&CteValTagDescricao = 'Passagem'
+&CteValRegEx = ''
+&CteValCodMsgErro = 167
+&CteValMsgErro = ''
+&CteValTagPai = 62
+
+&CteValCodigo = 65
+&CteValTag = 'xPass'
+&CteValTagDescricao = 'Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Passagem'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 168
+&CteValMsgErro = '[#inv0168] Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Passagem não possui um valor válido. Para [xPass] informe caracteres ente 1 e 15 dígitos. O código de três letras IATA, referente ao aeroporto de transferência, deverá ser incluído, quando for o caso. informe caracteres ente 1 e 15 dígitos. Quando não for possível, utilizar a sigla OACI. Qualquer solicitação de itinerário deverá ser incluída.'
+&CteValTagPai = 64
+
+&CteValCodigo = 66
+&CteValTag = 'xDest'
+&CteValTagDescricao = 'Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Destino'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 169
+&CteValMsgErro = '[#inv0169] Sigla ou código interno da Filial/Porto/Estação/Aeroporto de Destino não possui um valor válido. Para [xDest] informe caracteres ente 1 e 60 dígitos. Deverá ser incluído o código de três letras IATA do aeroporto de destino. Quando não for possível, utilizar a sigla OACI.'
+&CteValTagPai = 62
+
+&CteValCodigo = 67
+&CteValTag = 'xRota'
+&CteValTagDescricao = 'Código da Rota de Entrega'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 170
+&CteValMsgErro = '[#inv0170] Código da Rota de Entrega não possui um valor válido. Para [xRota] informe caracteres entre 1 e 10 dígitos.'
+&CteValTagPai = 62
+
+&CteValCodigo = 68
+&CteValTag = 'Entrega'
+&CteValTagDescricao = 'Informações ref. a previsão de entrega'
+&CteValRegEx = ''
+&CteValCodMsgErro = 171
+&CteValMsgErro = ''
+&CteValTagPai = 58
+
+&CteValCodigo = 69
+&CteValTag = 'semData'
+&CteValTagDescricao = 'Entrega sem data definida'
+&CteValRegEx = ''
+&CteValCodMsgErro = 172
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 70
+&CteValTag = 'tpPer'
+&CteValTagDescricao = 'Tipo de data/período programado para entrega'
+&CteValRegEx = '^0$'
+&CteValCodMsgErro = 137
+&CteValMsgErro = '[#inv0137] Tipo de data/período programado para entrega não possui um valor válido. Para [tpPer] informe 0 - Sem data definida'
+&CteValTagPai = 69
+
+&CteValCodigo = 71
+&CteValTag = 'comData'
+&CteValTagDescricao = 'Entrega com data definida'
+&CteValRegEx = ''
+&CteValCodMsgErro = 173
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 72
+&CteValTag = 'tpPer'
+&CteValTagDescricao = 'Tipo de data/período programado para entrega'
+&CteValRegEx = '^1$|^2$|^3$'
+&CteValCodMsgErro = 137
+&CteValMsgErro = '[#inv0137] Tipo de data/período programado para entrega não possui um valor válido. Para [tpPer] preencha com: 1-Na data; 2-Até a data; 3-A partir da data'
+&CteValTagPai = 71
+
+&CteValCodigo = 73
+&CteValTag = 'dProg'
+&CteValTagDescricao = 'Data programada'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data programada não possui um valor válido. Para [dProg] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 71
+
+&CteValCodigo = 74
+&CteValTag = 'noPeriodo'
+&CteValTagDescricao = 'Entrega no período definido'
+&CteValRegEx = ''
+&CteValCodMsgErro = 174
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 75
+&CteValTag = 'tpPer'
+&CteValTagDescricao = 'Tipo de data/período programado para entrega'
+&CteValRegEx = '^4$'
+&CteValCodMsgErro = 137
+&CteValMsgErro = '[#inv0137] Tipo de data/período programado para entrega não possui um valor válido. Para [tpPer] informe 4 - no período'
+&CteValTagPai = 74
+
+&CteValCodigo = 76
+&CteValTag = 'dIni'
+&CteValTagDescricao = 'Data inicial'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data inicial não possui um valor válido. Para [dIni] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 74
+
+&CteValCodigo = 77
+&CteValTag = 'dFim'
+&CteValTagDescricao = 'Data final'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data final não possui um valor válido. Para [dFim] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 74
+
+&CteValCodigo = 78
+&CteValTag = 'semHora'
+&CteValTagDescricao = 'Entrega sem hora definida'
+&CteValRegEx = ''
+&CteValCodMsgErro = 175
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 79
+&CteValTag = 'tpHor'
+&CteValTagDescricao = 'Tipo de hora'
+&CteValRegEx = '^0$'
+&CteValCodMsgErro = 138
+&CteValMsgErro = '[#inv0138] Tipo de hora não possui um valor válido. Para [tpHor] informe 0 - Sem hora definida'
+&CteValTagPai = 78
+
+&CteValCodigo = 80
+&CteValTag = 'comHora'
+&CteValTagDescricao = 'Entrega com hora definida'
+&CteValRegEx = ''
+&CteValCodMsgErro = 176
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 81
+&CteValTag = 'tpHor'
+&CteValTagDescricao = 'Tipo de hora'
+&CteValRegEx = '^1$|^2$|^3$'
+&CteValCodMsgErro = 138
+&CteValMsgErro = '[#inv0138] Tipo de hora não possui um valor válido. Para [tpHor] preencha com: 1-No horário; 2-Até o horário; 3-A partir do horário'
+&CteValTagPai = 80
+
+&CteValCodigo = 82
+&CteValTag = 'hProg'
+&CteValTagDescricao = 'Hora programada'
+&CteValRegEx = '^(([0-1][0-9])|([2][0-3])):([0-5][0-9]):([0-5][0-9])$'
+&CteValCodMsgErro = 125
+&CteValMsgErro = '[#inv0125] Hora programada não possui um valor válido. Para [hProg] informe uma data no formato HH:MM:SS'
+&CteValTagPai = 80
+
+&CteValCodigo = 83
+&CteValTag = 'noInter'
+&CteValTagDescricao = 'Entrega no intervalo de horário definido'
+&CteValRegEx = ''
+&CteValCodMsgErro = 177
+&CteValMsgErro = ''
+&CteValTagPai = 68
+
+&CteValCodigo = 84
+&CteValTag = 'tpHor'
+&CteValTagDescricao = 'Tipo de hora'
+&CteValRegEx = '^4$'
+&CteValCodMsgErro = 138
+&CteValMsgErro = '[#inv0138] Tipo de hora não possui um valor válido. Para [tpHor] informe 4 - No intervalo de tempo'
+&CteValTagPai = 83
+
+&CteValCodigo = 85
+&CteValTag = 'hIni'
+&CteValTagDescricao = 'Hora inicial'
+&CteValRegEx = '^(([0-1][0-9])|([2][0-3])):([0-5][0-9]):([0-5][0-9])$'
+&CteValCodMsgErro = 125
+&CteValMsgErro = '[#inv0125] Hora inicial não possui um valor válido. Para [hIni] informe uma data no formato HH:MM:SS'
+&CteValTagPai = 83
+
+&CteValCodigo = 86
+&CteValTag = 'hFim'
+&CteValTagDescricao = 'Hora final'
+&CteValRegEx = '^(([0-1][0-9])|([2][0-3])):([0-5][0-9]):([0-5][0-9])$'
+&CteValCodMsgErro = 125
+&CteValMsgErro = '[#inv0125] Hora final não possui um valor válido. Para [hFim] informe uma data no formato HH:MM:SS'
+&CteValTagPai = 83
+
+&CteValCodigo = 87
+&CteValTag = 'origCalc'
+&CteValTagDescricao = 'Município de origem para efeito de cálculo do frete'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Município de origem para efeito de cálculo do frete não possui um valor válido. Para [origCalc] informe caracteres entre 2 e 40 dígitos.'
+&CteValTagPai = 58
+
+&CteValCodigo = 88
+&CteValTag = 'destCalc'
+&CteValTagDescricao = 'Município de destino para efeito de cálculo do frete'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Município de destino para efeito de cálculo do frete não possui um valor válido. Para [destCalc] informe caracteres entre 2 e 40 dígitos.'
+&CteValTagPai = 58
+
+&CteValCodigo = 89
+&CteValTag = 'xObs'
+&CteValTagDescricao = 'Observações Gerais'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 178
+&CteValMsgErro = '[#inv0178] Observações Gerais não possui um valor válido. Para [xObs] informe caracteres entre 1 e 2000 dígitos.'
+&CteValTagPai = 58
+
+&CteValCodigo = 90
+&CteValTag = 'ObsCont'
+&CteValTagDescricao = 'Campo de uso livre do contribuinte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 179
+&CteValMsgErro = ''
+&CteValTagPai = 58
+
+&CteValCodigo = 91
+&CteValTag = 'xCampo'
+&CteValTagDescricao = 'Identificação do campo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 180
+&CteValMsgErro = '[#inv0180] Identificação do campo não possui um valor válido. Para [xCampo] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 90
+
+&CteValCodigo = 92
+&CteValTag = 'xTexto'
+&CteValTagDescricao = 'Conteúdo do campo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 181
+&CteValMsgErro = '[#inv0181] Conteúdo do campo não possui um valor válido. Para [xTexto] informe caracteres entre 1 e 160 dígitos.'
+&CteValTagPai = 90
+
+&CteValCodigo = 93
+&CteValTag = 'ObsFisco'
+&CteValTagDescricao = 'Campo de uso livre do contribuinte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 182
+&CteValMsgErro = ''
+&CteValTagPai = 58
+
+&CteValCodigo = 94
+&CteValTag = 'xCampo'
+&CteValTagDescricao = 'Identificação do campo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 180
+&CteValMsgErro = '[#inv0180] Identificação do campo não possui um valor válido. Para [xCampo] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 93
+
+&CteValCodigo = 95
+&CteValTag = 'xTexto'
+&CteValTagDescricao = 'Conteúdo do campo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 181
+&CteValMsgErro = '[#inv0181] Conteúdo do campo não possui um valor válido. Para [xTexto] informe caracteres entre 1 e 160 dígitos.'
+&CteValTagPai = 93
+
+&CteValCodigo = 96
+&CteValTag = 'emit'
+&CteValTagDescricao = 'Identificação do Emitente do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 183
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 97
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe zeros não significativos'
+&CteValTagPai = 96
+
+&CteValCodigo = 98
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'CPF do emitente'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 96
+
+&CteValCodigo = 99
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual do Emitente'
+&CteValRegEx = '^[0-9]{2,14}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] do emitente somente ficará sem informação para o caso do Regime Especial da NFF (tpEmis=3)'
+&CteValTagPai = 96
+
+&CteValCodigo = 100
+&CteValTag = 'IEST'
+&CteValTagDescricao = 'Inscrição Estadual do Substituto Tributário'
+&CteValRegEx = '^[0-9]{2,14}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual do Substituto Tributário não possui um valor válido. Para [IEST] informe entre 2 a 14 dígitos.'
+&CteValTagPai = 96
+
+&CteValCodigo = 101
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 96
+
+&CteValCodigo = 102
+&CteValTag = 'xFant'
+&CteValTagDescricao = 'Nome Fantasia'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 128
+&CteValMsgErro = '[#inv0128] Nome Fantasia não possui um valor válido. Para [xFant] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 96
+
+&CteValCodigo = 103
+&CteValTag = 'enderEmit'
+&CteValTagDescricao = 'Endereço do emitente'
+&CteValRegEx = ''
+&CteValCodMsgErro = 184
+&CteValMsgErro = ''
+&CteValTagPai = 96
+
+&CteValCodigo = 104
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 105
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 106
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 107
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 108
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE.'
+&CteValTagPai = 103
+
+&CteValCodigo = 109
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 110
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 103
+
+&CteValCodigo = 111
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE.'
+&CteValTagPai = 103
+
+&CteValCodigo = 112
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 103
+
+&CteValCodigo = 113
+&CteValTag = 'CRT'
+&CteValTagDescricao = 'Código do Regime Tributário'
+&CteValRegEx = '^1$|^2$|^3$'
+&CteValCodMsgErro = 342
+&CteValMsgErro = '[#inv0342] CRT do emitente não possui um valor válido. Para [CRT] informar: 1 - Simples Nacional; 2 - Simples Nacional, excesso sublimite de receita bruta; 3 - Regime Normal.'
+&CteValTagPai = 96
+
+&CteValCodigo = 114
+&CteValTag = 'rem'
+&CteValTagDescricao = 'Informações do Remetente das mercadorias transportadas pelo CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 185
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 115
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}|[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros. Informar os zeros não significativos.'
+&CteValTagPai = 114
+
+&CteValCodigo = 116
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 114
+
+&CteValCodigo = 117
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{0,14}$|^ISENTO$|^PR[0-9]{4,8}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe a IE do remetente ou ISENTO se remetente é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o remetente não seja contribuinte do ICMS não informar o conteúdo.'
+&CteValTagPai = 114
+
+&CteValCodigo = 118
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 114
+
+&CteValCodigo = 119
+&CteValTag = 'xFant'
+&CteValTagDescricao = 'Nome Fantasia'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 128
+&CteValMsgErro = '[#inv0128] Nome Fantasia não possui um valor válido. Para [xFant] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 114
+
+&CteValCodigo = 120
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 114
+
+&CteValCodigo = 121
+&CteValTag = 'enderReme'
+&CteValTagDescricao = 'Dados do endereço'
+&CteValRegEx = ''
+&CteValCodMsgErro = 186
+&CteValMsgErro = ''
+&CteValTagPai = 114
+
+&CteValCodigo = 122
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 121
+
+&CteValCodigo = 123
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 121
+
+&CteValCodigo = 124
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 121
+
+&CteValCodigo = 125
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 121
+
+&CteValCodigo = 126
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 121
+
+&CteValCodigo = 127
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 121
+
+&CteValCodigo = 128
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 121
+
+&CteValCodigo = 129
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 121
+
+&CteValCodigo = 130
+&CteValTag = 'cPais'
+&CteValTagDescricao = 'Código do país'
+&CteValRegEx = '^[0-9]{1,4}$'
+&CteValCodMsgErro = 130
+&CteValMsgErro = '[#inv0130] Código do país não possui um valor válido. Para [cPais] utilizar a tabela do BACEN'
+&CteValTagPai = 121
+
+&CteValCodigo = 131
+&CteValTag = 'xPais'
+&CteValTagDescricao = 'Nome do país'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 131
+&CteValMsgErro = '[#inv0131] Nome do país não possui um valor válido. Para [xPais] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 121
+
+&CteValCodigo = 132
+&CteValTag = 'email'
+&CteValTagDescricao = 'Endereço de email'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email do remetente não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 114
+
+&CteValCodigo = 133
+&CteValTag = 'exped'
+&CteValTagDescricao = 'Informações do Expedidor da Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 187
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 134
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}$|^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros. Informar os zeros não significativos.'
+&CteValTagPai = 133
+
+&CteValCodigo = 135
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 133
+
+&CteValCodigo = 136
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{0,14}$|^ISENTO$|^PR[0-9]{4,8}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe a IE do expedidor ou ISENTO se expedidor é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o expedidor não seja contribuinte do ICMS não informar o conteúdo.'
+&CteValTagPai = 133
+
+&CteValCodigo = 137
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 133
+
+&CteValCodigo = 138
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 133
+
+&CteValCodigo = 139
+&CteValTag = 'enderExped'
+&CteValTagDescricao = 'Dados do endereço'
+&CteValRegEx = ''
+&CteValCodMsgErro = 188
+&CteValMsgErro = ''
+&CteValTagPai = 133
+
+&CteValCodigo = 140
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 139
+
+&CteValCodigo = 141
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 139
+
+&CteValCodigo = 142
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 139
+
+&CteValCodigo = 143
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 139
+
+&CteValCodigo = 144
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 139
+
+&CteValCodigo = 145
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 139
+
+&CteValCodigo = 146
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 139
+
+&CteValCodigo = 147
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 139
+
+&CteValCodigo = 148
+&CteValTag = 'cPais'
+&CteValTagDescricao = 'Código do país'
+&CteValRegEx = '^[0-9]{1,4}$'
+&CteValCodMsgErro = 130
+&CteValMsgErro = '[#inv0130] Código do país não possui um valor válido. Para [cPais] utilize a tabela do BACEN'
+&CteValTagPai = 139
+
+&CteValCodigo = 149
+&CteValTag = 'xPais'
+&CteValTagDescricao = 'Nome do país'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 131
+&CteValMsgErro = '[#inv0131] Nome do país não possui um valor válido. Para [xPais] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 139
+
+&CteValCodigo = 150
+&CteValTag = 'email'
+&CteValTagDescricao = 'Endereço de email'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 133
+
+&CteValCodigo = 151
+&CteValTag = 'receb'
+&CteValTagDescricao = 'Informações do Recebedor da Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 189
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 152
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}$|^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros. Informar os zeros não significativos.'
+&CteValTagPai = 151
+
+&CteValCodigo = 153
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 151
+
+&CteValCodigo = 154
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{0,14}$|^ISENTO$|^PR[0-9]{4,8}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe a IE do recebedor ou ISENTO se recebedor é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o recebedor não seja contribuinte do ICMS não informar o conteúdo.'
+&CteValTagPai = 151
+
+&CteValCodigo = 155
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 151
+
+&CteValCodigo = 156
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 151
+
+&CteValCodigo = 157
+&CteValTag = 'enderReceb'
+&CteValTagDescricao = 'Dados do endereço'
+&CteValRegEx = ''
+&CteValCodMsgErro = 190
+&CteValMsgErro = ''
+&CteValTagPai = 151
+
+&CteValCodigo = 158
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 157
+
+&CteValCodigo = 159
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 157
+
+&CteValCodigo = 160
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 157
+
+&CteValCodigo = 161
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 157
+
+&CteValCodigo = 162
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 157
+
+&CteValCodigo = 163
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 157
+
+&CteValCodigo = 164
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 157
+
+&CteValCodigo = 165
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 157
+
+&CteValCodigo = 166
+&CteValTag = 'cPais'
+&CteValTagDescricao = 'Código do país'
+&CteValRegEx = '^[0-9]{1,4}$'
+&CteValCodMsgErro = 130
+&CteValMsgErro = '[#inv0130] Código do país não possui um valor válido. Para [cPais] utilizar a tabela do BACEN'
+&CteValTagPai = 157
+
+&CteValCodigo = 167
+&CteValTag = 'xPais'
+&CteValTagDescricao = 'Nome do país'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 131
+&CteValMsgErro = '[#inv0131] Nome do país não possui um valor válido. Para [xPais] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 157
+
+&CteValCodigo = 168
+&CteValTag = 'email'
+&CteValTagDescricao = 'Endereço de email'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 151
+
+&CteValCodigo = 169
+&CteValTag = 'dest'
+&CteValTagDescricao = 'Informações do Destinatário do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 191
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 170
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}$|^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros. Informar os zeros não significativos.'
+&CteValTagPai = 169
+
+&CteValCodigo = 171
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 169
+
+&CteValCodigo = 172
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{0,14}$|^ISENTO$|^PR[0-9]{4,8}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe a IE do destinatário ou ISENTO se destinatário é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o destinatário não seja contribuinte do ICMS não informar o conteúdo.'
+&CteValTagPai = 169
+
+&CteValCodigo = 173
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 169
+
+&CteValCodigo = 174
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 169
+
+&CteValCodigo = 175
+&CteValTag = 'ISUF'
+&CteValTagDescricao = 'Inscrição na SUFRAMA'
+&CteValRegEx = '^[0-9]{8,9}$'
+&CteValCodMsgErro = 135
+&CteValMsgErro = '[#inv0135] Inscrição na SUFRAMA não possui um valor válido. Para [ISUF] informe números entre 8 e 9 dígitos'
+&CteValTagPai = 169
+
+&CteValCodigo = 176
+&CteValTag = 'enderDest'
+&CteValTagDescricao = 'Dados do endereço'
+&CteValRegEx = ''
+&CteValCodMsgErro = 192
+&CteValMsgErro = ''
+&CteValTagPai = 169
+
+&CteValCodigo = 177
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 126
+&CteValMsgErro = '[#inv0126] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 176
+
+&CteValCodigo = 178
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do endereço'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 129
+&CteValMsgErro = '[#inv0129] Número do endereço não possui um valor válido. Para [nro] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 176
+
+&CteValCodigo = 179
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 176
+
+&CteValCodigo = 180
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 176
+
+&CteValCodigo = 181
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 176
+
+&CteValCodigo = 182
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 176
+
+&CteValCodigo = 183
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 176
+
+&CteValCodigo = 184
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 176
+
+&CteValCodigo = 185
+&CteValTag = 'cPais'
+&CteValTagDescricao = 'Código do país'
+&CteValRegEx = '^[0-9]{1,4}$'
+&CteValCodMsgErro = 130
+&CteValMsgErro = '[#inv0130] Código do país não possui um valor válido. Para [cPais] utilizar a tabela do BACEN'
+&CteValTagPai = 176
+
+&CteValCodigo = 186
+&CteValTag = 'xPais'
+&CteValTagDescricao = 'Nome do país'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 131
+&CteValMsgErro = '[#inv0131] Nome do país não possui um valor válido. Para [xPais] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 176
+
+&CteValCodigo = 187
+&CteValTag = 'email'
+&CteValTagDescricao = 'Endereço de email'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 169
+
+&CteValCodigo = 188
+&CteValTag = 'vPrest'
+&CteValTagDescricao = 'Valores da Prestação de Serviço'
+&CteValRegEx = ''
+&CteValCodMsgErro = 193
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 189
+&CteValTag = 'vTPrest'
+&CteValTagDescricao = 'Valor Total da Prestação do Serviço'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total da Prestação do Serviço não possui um valor válido. Para [vTPrest] informe um número de 15 posições, sendo 13 inteiras e 2 decimais. Pode conter zeros quando o CT-e for de complemento de ICMS'
+&CteValTagPai = 188
+
+&CteValCodigo = 190
+&CteValTag = 'vRec'
+&CteValTagDescricao = 'Valor a Receber'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor a Receber não possui um valor válido. Para [vRec] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 188
+
+&CteValCodigo = 191
+&CteValTag = 'Comp'
+&CteValTagDescricao = 'Componentes do Valor da Prestação'
+&CteValRegEx = ''
+&CteValCodMsgErro = 194
+&CteValMsgErro = ''
+&CteValTagPai = 188
+
+&CteValCodigo = 192
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Nome do componente'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Nome do componente não possui um valor válido. Para [xNome] informe caracteres ente 1 e 15 dígitos. Informe um texto livre, por exemplo: FRETE PESO, FRETE VALOR, SEC/CAT, ADEME, AGENDAMENTO, etc'
+&CteValTagPai = 191
+
+&CteValCodigo = 193
+&CteValTag = 'vComp'
+&CteValTagDescricao = 'Valor do componente'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do componente não possui um valor válido. Para [vComp] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 191
+
+&CteValCodigo = 194
+&CteValTag = 'imp'
+&CteValTagDescricao = 'Informações relativas aos Impostos'
+&CteValRegEx = ''
+&CteValCodMsgErro = 195
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 195
+&CteValTag = 'ICMS'
+&CteValTagDescricao = 'Informações relativas ao ICMS'
+&CteValRegEx = ''
+&CteValCodMsgErro = 196
+&CteValMsgErro = ''
+&CteValTagPai = 194
+
+&CteValCodigo = 196
+&CteValTag = 'ICMS00'
+&CteValTagDescricao = 'Prestação sujeito à tributação normal do ICMS'
+&CteValRegEx = ''
+&CteValCodMsgErro = 197
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 197
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^00$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 00 - tributação normal ICMS'
+&CteValTagPai = 196
+
+&CteValCodigo = 198
+&CteValTag = 'vBC'
+&CteValTagDescricao = 'Valor da Base de Cálculo do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Base de Cálculo do ICMS não possui um valor válido. Para [vBC] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 196
+
+&CteValCodigo = 199
+&CteValTag = 'pICMS'
+&CteValTagDescricao = 'Alíquota do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota do ICMS não possui um valor válido. Para [pICMS] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 196
+
+&CteValCodigo = 200
+&CteValTag = 'vICMS'
+&CteValTagDescricao = 'Valor Total do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total do ICMS não possui um valor válido. Para [vICMS] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 196
+
+&CteValCodigo = 201
+&CteValTag = 'ICMS20'
+&CteValTagDescricao = 'Prestação sujeito à tributação com redução de BC do ICMS'
+&CteValRegEx = ''
+&CteValCodMsgErro = 198
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 202
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^20$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 20 - tributação com BC reduzida do ICMS'
+&CteValTagPai = 201
+
+&CteValCodigo = 203
+&CteValTag = 'pRedBC'
+&CteValTagDescricao = 'Percentual de redução da BC'
+&CteValRegEx = '^0$|^0\.[0-9]{2,3}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 134
+&CteValMsgErro = '[#inv0134] Percentual de redução da BC não possui um valor válido. Para [pRedBC] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 201
+
+&CteValCodigo = 204
+&CteValTag = 'vBC'
+&CteValTagDescricao = 'Valor da Base de Cálculo do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Base de Cálculo do ICMS não possui um valor válido. Para [vBC] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 201
+
+&CteValCodigo = 205
+&CteValTag = 'pICMS'
+&CteValTagDescricao = 'Alíquota do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota do ICMS não possui um valor válido. Para [pICMS] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 201
+
+&CteValCodigo = 206
+&CteValTag = 'vICMS'
+&CteValTagDescricao = 'Valor Total do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total do ICMS não possui um valor válido. Para [vICMS] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 201
+
+&CteValCodigo = 207
+&CteValTag = 'ICMS45'
+&CteValTagDescricao = 'ICMS  Isento, não Tributado ou diferido'
+&CteValRegEx = ''
+&CteValCodMsgErro = 199
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 208
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^40$|^41$|^51$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] preencha com: 40 - ICMS isenção; 41 - ICMS não tributada; 51 - ICMS diferido'
+&CteValTagPai = 207
+
+&CteValCodigo = 209
+&CteValTag = 'ICMS60'
+&CteValTagDescricao = 'Tributação pelo ICMS60 - ICMS cobrado por substituição tributária.'
+&CteValRegEx = ''
+&CteValCodMsgErro = 200
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 210
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^60$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 60 - ICMS cobrado por substituição tributária'
+&CteValTagPai = 209
+
+&CteValCodigo = 211
+&CteValTag = 'vBCSTRet'
+&CteValTagDescricao = 'Valor da BC do ICMS ST retido'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da BC do ICMS ST retido não possui um valor válido. Para [vBCSTRet] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 209
+
+&CteValCodigo = 212
+&CteValTag = 'vICMSSTRet'
+&CteValTagDescricao = 'Valor do ICMS ST retido'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do ICMS ST retido não possui um valor válido. Para [vICMSSTRet] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 209
+
+&CteValCodigo = 213
+&CteValTag = 'pICMSSTRet'
+&CteValTagDescricao = 'Alíquota do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota do ICMS não possui um valor válido. Para [pICMSSTRet] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 209
+
+&CteValCodigo = 214
+&CteValTag = 'vCred'
+&CteValTagDescricao = 'Valor do Crédito outorgado/Presumido'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do Crédito outorgado/Presumido não possui um valor válido. Para [vCred] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 209
+
+&CteValCodigo = 215
+&CteValTag = 'ICMS90'
+&CteValTagDescricao = 'ICMS Outros'
+&CteValRegEx = ''
+&CteValCodMsgErro = 201
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 216
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^90$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 90 - ICMS outros'
+&CteValTagPai = 215
+
+&CteValCodigo = 217
+&CteValTag = 'pRedBC'
+&CteValTagDescricao = 'Percentual de redução da BC'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 134
+&CteValMsgErro = '[#inv0134] Percentual de redução da BC não possui um valor válido. Para [pRedBC] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 215
+
+&CteValCodigo = 218
+&CteValTag = 'vBC'
+&CteValTagDescricao = 'Valor da Base de Cálculo do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Base de Cálculo do ICMS não possui um valor válido. Para [vBC] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 215
+
+&CteValCodigo = 219
+&CteValTag = 'pICMS'
+&CteValTagDescricao = 'Alíquota do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota do ICMS não possui um valor válido. Para [pICMS] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 215
+
+&CteValCodigo = 220
+&CteValTag = 'vICMS'
+&CteValTagDescricao = 'Valor Total do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total do ICMS não possui um valor válido. Para [vICMS] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 215
+
+&CteValCodigo = 221
+&CteValTag = 'vCred'
+&CteValTagDescricao = 'Valor do Crédito outorgado/Presumido'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do Crédito outorgado/Presumido não possui um valor válido. Para [vCred] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 215
+
+&CteValCodigo = 222
+&CteValTag = 'ICMSOutraUF'
+&CteValTagDescricao = 'ICMS devido à UF de origem da prestação'
+&CteValRegEx = ''
+&CteValCodMsgErro = 202
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 223
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^90$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 90 - ICMS Outra UF'
+&CteValTagPai = 222
+
+&CteValCodigo = 224
+&CteValTag = 'pRedBCOutraUF'
+&CteValTagDescricao = 'Percentual de redução da BC'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 134
+&CteValMsgErro = '[#inv0134] Percentual de redução da BC não possui um valor válido. Para [pRedBCOutraUF] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 222
+
+&CteValCodigo = 225
+&CteValTag = 'vBCOutraUF'
+&CteValTagDescricao = 'Valor da BC do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da BC do ICMS não possui um valor válido. Para [vBCOutraUF] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 222
+
+&CteValCodigo = 226
+&CteValTag = 'pICMSOutraUF'
+&CteValTagDescricao = 'Alíquota do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota do ICMS não possui um valor válido. Para [pICMSOutraUF] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 222
+
+&CteValCodigo = 227
+&CteValTag = 'vICMSOutraUF'
+&CteValTagDescricao = 'Valor do ICMS devido outra UF'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do ICMS devido outra UF não possui um valor válido. Para [vICMSOutraUF] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 222
+
+&CteValCodigo = 228
+&CteValTag = 'ICMSSN'
+&CteValTagDescricao = 'Simples Nacional'
+&CteValRegEx = ''
+&CteValCodMsgErro = 203
+&CteValMsgErro = ''
+&CteValTagPai = 195
+
+&CteValCodigo = 229
+&CteValTag = 'CST'
+&CteValTagDescricao = 'Classificação Tributária do Serviço'
+&CteValRegEx = '^90$'
+&CteValCodMsgErro = 123
+&CteValMsgErro = '[#inv0123] Classificação Tributária do Serviço não possui um valor válido. Para [CST] informe 90 - ICMS Simples Nacional'
+&CteValTagPai = 228
+
+&CteValCodigo = 230
+&CteValTag = 'indSN'
+&CteValTagDescricao = 'Indica se o contribuinte é Simples Nacional'
+&CteValRegEx = '^1$'
+&CteValCodMsgErro = 204
+&CteValMsgErro = '[#inv0204] Indica se o contribuinte é Simples Nacional não possui um valor válido. Para [indSN] informe 1 para contribuinte optante pelo Simples Nacional'
+&CteValTagPai = 228
+
+&CteValCodigo = 231
+&CteValTag = 'vTotTrib'
+&CteValTagDescricao = 'Valor Total dos Tributos'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total dos Tributos não possui um valor válido. Para [vTotTrib] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 194
+
+&CteValCodigo = 232
+&CteValTag = 'infAdFisco'
+&CteValTagDescricao = 'Informações adicionais de interesse do Fisco'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 205
+&CteValMsgErro = '[#inv0205] Informações adicionais de interesse do Fisco não possui um valor válido. Para [infAdFisco] informe caracteres ente 1 e 2000 dígitos. Por exemplo, a Norma referenciada, informações complementares, etc'
+&CteValTagPai = 194
+
+&CteValCodigo = 233
+&CteValTag = 'ICMSUFFim'
+&CteValTagDescricao = 'Informações do ICMS de partilha com a UF de término do serviço de transporte na operação interestadual'
+&CteValRegEx = ' '
+&CteValCodMsgErro = 343
+&CteValMsgErro = ' '
+&CteValTagPai = 195
+
+&CteValCodigo = 234
+&CteValTag = 'vBCUFFim'
+&CteValTagDescricao = 'Valor da BC do ICMS na UF de término da prestação do serviço de transporte'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da BC do ICMS na UF de término da prestação do serviço de transporte não possui um valor válido. Para [vBCUFFim] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 235
+&CteValTag = 'pFCPUFFim'
+&CteValTagDescricao = 'Percentual do ICMS relativo ao Fundo de Combate à pobreza (FCP) na UF de término da prestação do serviço de transporte'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 346
+&CteValMsgErro = '[#inv0346] Percentual do ICMS relativo ao Fundo de Combate á Pobreza (FCP) na UF de término da prestação do serviço de transporte não possui um valor válido. Para [pFCPUFFim] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 236
+&CteValTag = 'pICMSUFFim'
+&CteValTagDescricao = 'Alíquota interna da UF de término da prestação do serviço de transporte'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 111
+&CteValMsgErro = '[#inv0111] Alíquota interna da UF de término da prestação do serviço de transporte não possui um valor válido. Para [pICMSUFFim] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 237
+&CteValTag = 'pICMSInter'
+&CteValTagDescricao = 'Alíquota interestadual das UF envolvidas'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,2}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 344
+&CteValMsgErro = '[#inv0344] Alíquota interestadual das UF envolvidas não possui um valor válido. Para [pICMSInter] informe um número de 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 238
+&CteValTag = 'vFCPUFFim'
+&CteValTagDescricao = 'Valor do ICMS relativo ao Fundo de Combate á Pobreza (FCP) da UF de término da prestação'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 345
+&CteValMsgErro = '[#inv0345] Valor do ICMS relativo ao Fundo de Combate á Pobreza (FCP) da UF de término da prestação não possui um valor válido. Para [vFCPUFFim] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 239
+&CteValTag = 'vICMSUFFim'
+&CteValTagDescricao = 'Valor do ICMS de partilha para a UF de término da prestação do serviço de transporte'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do ICMS de partilha para a UF de término da prestação do serviço não possui um valor válido. Para [vICMSUFFim] informe um número de 15 posições, sendo 13 inteiras e 2 decimais. '
+&CteValTagPai = 233
+
+&CteValCodigo = 240
+&CteValTag = 'vICMSUFIni'
+&CteValTagDescricao = 'Valor do ICMS de partilha para a UF de início da prestação do serviço de transporte'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do ICMS de partilha para a UF de início da prestação do serviço não possui um valor válido. Para [vICMSUFIni] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 233
+
+&CteValCodigo = 241
+&CteValTag = 'infCTeNorm'
+&CteValTagDescricao = 'Grupo de informações do CT-e Normal e Substituto'
+&CteValRegEx = ''
+&CteValCodMsgErro = 206
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 242
+&CteValTag = 'infCarga'
+&CteValTagDescricao = 'Informações da Carga do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 207
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 243
+&CteValTag = 'vCarga'
+&CteValTagDescricao = 'Valor total da carga'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor total da carga não possui um valor válido. Para [vCarga] informe um número de 15 posições, sendo 13 inteiras e 2 decimais. Dever ser informado para todos os modais, com exceção para o Dutoviário.'
+&CteValTagPai = 242
+
+&CteValCodigo = 244
+&CteValTag = 'proPred'
+&CteValTagDescricao = 'Produto predominante'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 208
+&CteValMsgErro = '[#inv0208] Produto predominante não possui um valor válido. Para [proPred] informe caracteres ente 1 e 60 dígitos. Informe a descrição do produto predominante'
+&CteValTagPai = 242
+
+&CteValCodigo = 245
+&CteValTag = 'xOutCat'
+&CteValTagDescricao = 'Outras características da carga'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 209
+&CteValMsgErro = '[#inv0209] Outras características da carga não possui um valor válido. Para [xOutCat] informe caracteres ente 1 e 30 dígitos. Por exemplo, 'FRIA, 'GRANEL', 'REFRIGERADA', 'Medidas: 12X12X12''
+&CteValTagPai = 242
+
+&CteValCodigo = 246
+&CteValTag = 'vCargaAverb'
+&CteValTagDescricao = 'Valor da Carga para efeito de averbação'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da carga para efeito de averbação não possui um valor válido. Para [vCargaAverb] informe um número de 15 posições, sendo 13 inteiras e 2 decimais. Normalmente igual ao valor declarado da mercadoria.'
+&CteValTagPai = 242
+
+&CteValCodigo = 247
+&CteValTag = 'infQ'
+&CteValTagDescricao = 'Informações de quantidades da Carga do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 210
+&CteValMsgErro = ''
+&CteValTagPai = 242
+
+&CteValCodigo = 248
+&CteValTag = 'cUnid'
+&CteValTagDescricao = 'Código da Unidade de Medida'
+&CteValRegEx = '^00$|^01$|^02$|^03$|^04$|^05$'
+&CteValCodMsgErro = 211
+&CteValMsgErro = '[#inv0211] Código da Unidade de Medida não possui um valor válido. Para [cUnid] preencha com: 00-M3; 01-KG; 02-TON; 03-UNIDADE; 04-LITROS; 05-MMBTU'
+&CteValTagPai = 238
+
+&CteValCodigo = 249
+&CteValTag = 'tpMed'
+&CteValTagDescricao = 'Tipo da Medida'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 212
+&CteValMsgErro = '[#inv0212] Tipo da Medida não possui um valor válido. Para [tpMed] informe caracteres ente 1 e 20 dígitos. Por exemplo, PESO BRUTO, PESO DECLARADO, PESO CUBADO, PESO AFORADO, PESO AFERIDO, PESO BASE DE CÁLCULO, LITRAGEM, CAIXAS e etc'
+&CteValTagPai = 238
+
+&CteValCodigo = 250
+&CteValTag = 'qCarga'
+&CteValTagDescricao = 'Quantidade'
+&CteValRegEx = '^0$|^0\.[0-9]{4}$|^[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?$'
+&CteValCodMsgErro = 213
+&CteValMsgErro = '[#inv0213] Quantidade não possui um valor válido. Para [qCarga] informe um número de 15 posições, sendo 11 inteiras e 4 decimais.'
+&CteValTagPai = 238
+
+&CteValCodigo = 251
+&CteValTag = 'infDoc'
+&CteValTagDescricao = 'Informações dos documentos transportados pelo CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 214
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 252
+&CteValTag = 'infNF'
+&CteValTagDescricao = 'Informações das NF'
+&CteValRegEx = ''
+&CteValCodMsgErro = 215
+&CteValMsgErro = ''
+&CteValTagPai = 251
+
+&CteValCodigo = 253
+&CteValTag = 'nRoma'
+&CteValTagDescricao = 'Número do Romaneio da NF'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 216
+&CteValMsgErro = '[#inv0216] Número do Romaneio da NF não possui um valor válido. Para [nRoma] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 252
+
+&CteValCodigo = 254
+&CteValTag = 'nPed'
+&CteValTagDescricao = 'Número do Pedido da NF'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 217
+&CteValMsgErro = '[#inv0217] Número do Pedido da NF não possui um valor válido. Para [nPed] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 252
+
+&CteValCodigo = 255
+&CteValTag = 'mod'
+&CteValTagDescricao = 'Modelo do documento fiscal'
+&CteValRegEx = '^01$|^04$'
+&CteValCodMsgErro = 127
+&CteValMsgErro = '[#inv0127] Modelo do documento fiscal não possui um valor válido. Para [mod] preencha com: 01 - NF Modelo 01/1A e Avulsa; 04 - NF de Produtor'
+&CteValTagPai = 252
+
+&CteValCodigo = 256
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série do CT-e'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série do CT-e não possui um valor válido. Para [serie] informe caracteres entre 1 e 3 dígitos.'
+&CteValTagPai = 252
+
+&CteValCodigo = 257
+&CteValTag = 'nDoc'
+&CteValTagDescricao = 'Número'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 218
+&CteValMsgErro = '[#inv0218] Número não possui um valor válido. Para [nDoc] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 252
+
+&CteValCodigo = 258
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de Emissão'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Emissão não possui um valor válido. Para [dEmi] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 252
+
+&CteValCodigo = 259
+&CteValTag = 'vBC'
+&CteValTagDescricao = 'Valor da Base de Cálculo do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Base de Cálculo do ICMS não possui um valor válido. Para [vBC] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 260
+&CteValTag = 'vICMS'
+&CteValTagDescricao = 'Valor Total do ICMS'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total do ICMS não possui um valor válido. Para [vICMS] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 261
+&CteValTag = 'vBCST'
+&CteValTagDescricao = 'Valor da Base de Cálculo do ICMS ST'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Base de Cálculo do ICMS ST não possui um valor válido. Para [vBCST] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 262
+&CteValTag = 'vST'
+&CteValTagDescricao = 'Valor Total do ICMS ST'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total do ICMS ST não possui um valor válido. Para [vST] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 263
+&CteValTag = 'vProd'
+&CteValTagDescricao = 'Valor Total dos Produtos'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total dos Produtos não possui um valor válido. Para [vProd] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 264
+&CteValTag = 'vNF'
+&CteValTagDescricao = 'Valor Total da NF'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Total da NF não possui um valor válido. Para [vNF] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 265
+&CteValTag = 'nCFOP'
+&CteValTagDescricao = 'CFOP Predominante'
+&CteValRegEx = '^[123567][0-9]([0-9][1-9]|[1-9][0-9])$'
+&CteValCodMsgErro = 118
+&CteValMsgErro = '[#inv0118] CFOP Predominante não possui um valor válido. Para [nCFOP] informe o CFOP da NF ou, na existência de mais de um, predominância pelo critério de valor econômico.'
+&CteValTagPai = 252
+
+&CteValCodigo = 266
+&CteValTag = 'nPeso'
+&CteValTagDescricao = 'Peso total em Kg'
+&CteValRegEx = '^0\.[1-9]{1}[0-9]{2}$|^0\.[0-9]{2}[1-9]{1}$|^0\.[0-9]{1}[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 132
+&CteValMsgErro = '[#inv0132] Peso total em Kg não possui um valor válido. Para [nPeso] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 252
+
+&CteValCodigo = 267
+&CteValTag = 'PIN'
+&CteValTagDescricao = 'PIN SUFRAMA'
+&CteValRegEx = '^[1-9]{1}[0-9]{1,8}$'
+&CteValCodMsgErro = 135
+&CteValMsgErro = '[#inv0135] PIN SUFRAMA não possui um valor válido. Para [PIN] informe o PIN atribuído pela SUFRAMA para a operação.'
+&CteValTagPai = 252
+
+&CteValCodigo = 268
+&CteValTag = 'dPrev'
+&CteValTagDescricao = 'Data prevista de entrega'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data prevista de entrega não possui um valor válido. Para [dPrev] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 252
+
+&CteValCodigo = 269
+&CteValTag = 'infUnidTransp'
+&CteValTagDescricao = 'Informações das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 219
+&CteValMsgErro = ''
+&CteValTagPai = 252
+
+&CteValCodigo = 270
+&CteValTag = 'tpUnidTransp'
+&CteValTagDescricao = 'Tipo da Unidade de Transporte'
+&CteValRegEx = '^1$|^2$|^3$|^4$|^5$|^6$|^7$'
+&CteValCodMsgErro = 68
+&CteValMsgErro = '[#inv0068] Tipo da Unidade de Transporte não possui um valor válido. Para [tpUnidTransp] preencha com: 1 - Rodoviário Tração; 2 - Rodoviário Reboque; 3 - Navio; 4 - Balsa; 5 - Aeronave; 6 - Vagão; 7 - Outros'
+&CteValTagPai = 269
+
+&CteValCodigo = 271
+&CteValTag = 'idUnidTransp'
+&CteValTagDescricao = 'Identificação da Unidade de Transporte'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Transporte não possui um valor válido. Para [idUnidTransp] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de transporte, por exemplo: para rodoviário tração ou reboque deverá preencher com a placa do veículo.'
+&CteValTagPai = 274
+
+&CteValCodigo = 272
+&CteValTag = 'lacUnidTransp'
+&CteValTagDescricao = 'Lacres das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 220
+&CteValMsgErro = ''
+&CteValTagPai = 269
+
+&CteValCodigo = 273
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 272
+
+&CteValCodigo = 274
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 221
+&CteValMsgErro = ''
+&CteValTagPai = 269
+
+&CteValCodigo = 275
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 274
+
+&CteValCodigo = 276
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga, por exemplo: número do container.'
+&CteValTagPai = 281
+
+&CteValCodigo = 277
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 222
+&CteValMsgErro = ''
+&CteValTagPai = 274
+
+&CteValCodigo = 278
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 277
+
+&CteValCodigo = 279
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 274
+
+&CteValCodigo = 280
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 269
+
+&CteValCodigo = 281
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 223
+&CteValMsgErro = ''
+&CteValTagPai = 252
+
+&CteValCodigo = 282
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 281
+
+&CteValCodigo = 283
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga, por exemplo: número do container.'
+&CteValTagPai = 296
+
+&CteValCodigo = 284
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 224
+&CteValMsgErro = ''
+&CteValTagPai = 281
+
+&CteValCodigo = 285
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 284
+
+&CteValCodigo = 286
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 281
+
+&CteValCodigo = 287
+&CteValTag = 'infNFe'
+&CteValTagDescricao = 'Informações das NF-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 225
+&CteValMsgErro = ''
+&CteValTagPai = 251
+
+&CteValCodigo = 288
+&CteValTag = 'chave'
+&CteValTagDescricao = 'Chave de acesso da NF-e'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso da NF-e não possui um valor válido. Para [chave] informe um número de 44 dígitos.'
+&CteValTagPai = 287
+
+&CteValCodigo = 289
+&CteValTag = 'PIN'
+&CteValTagDescricao = 'PIN SUFRAMA'
+&CteValRegEx = '^[1-9]{1}[0-9]{1,8}$'
+&CteValCodMsgErro = 135
+&CteValMsgErro = '[#inv0135] PIN SUFRAMA não possui um valor válido. Para [PIN] informe o PIN atribuído pela SUFRAMA para a operação.'
+&CteValTagPai = 287
+
+&CteValCodigo = 290
+&CteValTag = 'dPrev'
+&CteValTagDescricao = 'Data prevista de entrega'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data prevista de entrega não possui um valor válido. Para [dPrev] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 287
+
+&CteValCodigo = 291
+&CteValTag = 'infUnidTransp'
+&CteValTagDescricao = 'Informações das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 226
+&CteValMsgErro = ''
+&CteValTagPai = 287
+
+&CteValCodigo = 292
+&CteValTag = 'tpUnidTransp'
+&CteValTagDescricao = 'Tipo da Unidade de Transporte'
+&CteValRegEx = '^1$|^2$|^3$|^4$|^5$|^6$|^7$'
+&CteValCodMsgErro = 68
+&CteValMsgErro = '[#inv0068] Tipo da Unidade de Transporte não possui um valor válido. Para [tpUnidTransp] preencha com: 1 - Rodoviário Tração; 2 - Rodoviário Reboque; 3 - Navio; 4 - Balsa; 5 - Aeronave; 6 - Vagão; 7 - Outros'
+&CteValTagPai = 291
+
+&CteValCodigo = 293
+&CteValTag = 'idUnidTransp'
+&CteValTagDescricao = 'Identificação da Unidade de Transporte'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Transporte não possui um valor válido. Para [idUnidTransp] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de transporte, por exemplo: para rodoviário tração ou reboque deverá preencher com a placa do veículo.'
+&CteValTagPai = 303
+
+&CteValCodigo = 294
+&CteValTag = 'lacUnidTransp'
+&CteValTagDescricao = 'Lacres das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 227
+&CteValMsgErro = ''
+&CteValTagPai = 291
+
+&CteValCodigo = 295
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 294
+
+&CteValCodigo = 296
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 228
+&CteValMsgErro = ''
+&CteValTagPai = 291
+
+&CteValCodigo = 297
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 296
+
+&CteValCodigo = 298
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga, por exemplo: número do container.'
+&CteValTagPai = 321
+
+&CteValCodigo = 299
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 229
+&CteValMsgErro = ''
+&CteValTagPai = 296
+
+&CteValCodigo = 300
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 299
+
+&CteValCodigo = 301
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 296
+
+&CteValCodigo = 302
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 291
+
+&CteValCodigo = 303
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 230
+&CteValMsgErro = ''
+&CteValTagPai = 287
+
+&CteValCodigo = 304
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 303
+
+&CteValCodigo = 305
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 58
+&CteValMsgErro = '[#inv0058] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga, por exemplo: número do container.'
+&CteValTagPai = 328
+
+&CteValCodigo = 306
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 231
+&CteValMsgErro = ''
+&CteValTagPai = 303
+
+&CteValCodigo = 307
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 306
+
+&CteValCodigo = 308
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 303
+
+&CteValCodigo = 309
+&CteValTag = 'infOutros'
+&CteValTagDescricao = 'Informações dos demais documentos'
+&CteValRegEx = ''
+&CteValCodMsgErro = 232
+&CteValMsgErro = ''
+&CteValTagPai = 251
+
+&CteValCodigo = 310
+&CteValTag = 'tpDoc'
+&CteValTagDescricao = 'Tipo de documento originário'
+&CteValRegEx = '^00$|^10$|^59$|^65$|^99$'
+&CteValCodMsgErro = 233
+&CteValMsgErro = '[#inv0233] Tipo de documento originário não possui um valor válido. Para [tpDoc] preencha com: 00 - Declaração; 10 - Dutoviário; 59 - CF-e SAT;  65 - NFC-e; 99 - Outros'
+&CteValTagPai = 309
+
+&CteValCodigo = 311
+&CteValTag = 'descOutros'
+&CteValTagDescricao = 'Descrição quando se tratar de 99-Outros'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 234
+&CteValMsgErro = '[#inv0234] Descrição quando se tratar de 99-Outros não possui um valor válido. Para [descOutros] informe caracteres entre 1 e 100 dígitos.'
+&CteValTagPai = 309
+
+&CteValCodigo = 312
+&CteValTag = 'nDoc'
+&CteValTagDescricao = 'Número'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 235
+&CteValMsgErro = '[#inv0235] Número não possui um valor válido. Para [nDoc] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 309
+
+&CteValCodigo = 313
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de Emissão'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Emissão não possui um valor válido. Para [dEmi] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 309
+
+&CteValCodigo = 314
+&CteValTag = 'vDocFisc'
+&CteValTagDescricao = 'Valor do documento'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do documento não possui um valor válido. Para [vDocFisc] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 309
+
+&CteValCodigo = 315
+&CteValTag = 'dPrev'
+&CteValTagDescricao = 'Data prevista de entrega'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data prevista de entrega não possui um valor válido. Para [dPrev] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 309
+
+&CteValCodigo = 316
+&CteValTag = 'infUnidTransp'
+&CteValTagDescricao = 'Informações das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 236
+&CteValMsgErro = ''
+&CteValTagPai = 309
+
+&CteValCodigo = 317
+&CteValTag = 'tpUnidTransp'
+&CteValTagDescricao = 'Tipo da Unidade de Transporte'
+&CteValRegEx = '^1$|^2$|^3$|^4$|^5$|^6$|^7$'
+&CteValCodMsgErro = 68
+&CteValMsgErro = '[#inv0068] Tipo da Unidade de Transporte não possui um valor válido. Para [tpUnidTransp] preencha com: 1 - Rodoviário Tração; 2 - Rodoviário Reboque; 3 - Navio; 4 - Balsa; 5 - Aeronave; 6 - Vagão; 7 - Outros'
+&CteValTagPai = 316
+
+&CteValCodigo = 318
+&CteValTag = 'idUnidTransp'
+&CteValTagDescricao = 'Identificação da Unidade de Transporte'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 69
+&CteValMsgErro = '[#inv0069] Identificação da Unidade de Transporte não possui um valor válido. Para [idUnidTransp] informe caracteres entre 1 e 20 dígitos, com a identificação conforme o tipo de unidade de transporte. Por exemplo: para rodoviário tração ou reboque deverá preencher com a placa do veículo.'
+&CteValTagPai = 269
+
+&CteValCodigo = 319
+&CteValTag = 'lacUnidTransp'
+&CteValTagDescricao = 'Lacres das Unidades de Transporte'
+&CteValRegEx = ''
+&CteValCodMsgErro = 237
+&CteValMsgErro = ''
+&CteValTagPai = 316
+
+&CteValCodigo = 320
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 319
+
+&CteValCodigo = 321
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 238
+&CteValMsgErro = ''
+&CteValTagPai = 316
+
+&CteValCodigo = 322
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 321
+
+&CteValCodigo = 323
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 69
+&CteValMsgErro = '[#inv0069] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga. Por exemplo: número do container..'
+&CteValTagPai = 291
+
+&CteValCodigo = 324
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 239
+&CteValMsgErro = ''
+&CteValTagPai = 321
+
+&CteValCodigo = 325
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 324
+
+&CteValCodigo = 326
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 321
+
+&CteValCodigo = 327
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 316
+
+&CteValCodigo = 328
+&CteValTag = 'infUnidCarga'
+&CteValTagDescricao = 'Informações das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 240
+&CteValMsgErro = ''
+&CteValTagPai = 309
+
+&CteValCodigo = 329
+&CteValTag = 'tpUnidCarga'
+&CteValTagDescricao = 'Tipo da Unidade de Carga'
+&CteValRegEx = '^1$|^2$|^3$|^4$'
+&CteValCodMsgErro = 71
+&CteValMsgErro = '[#inv0071] Tipo da Unidade de Carga não possui um valor válido. Para [tpUnidCarga] preencha com: 1 - Container; 2 - ULD; 3 - Pallet; 4 - Outros'
+&CteValTagPai = 328
+
+&CteValCodigo = 330
+&CteValTag = 'idUnidCarga'
+&CteValTagDescricao = 'Identificação da Unidade de Carga'
+&CteValRegEx = '^[A-Z0-9]{1,20}$'
+&CteValCodMsgErro = 69
+&CteValMsgErro = '[#inv0069] Identificação da Unidade de Carga não possui um valor válido. Para [idUnidCarga] informe caracteres entre 1 e 20 dígitos, com a identificação da unidade de carga. Por exemplo: número do container..'
+&CteValTagPai = 316
+
+&CteValCodigo = 331
+&CteValTag = 'lacUnidCarga'
+&CteValTagDescricao = 'Lacres das Unidades de Carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 241
+&CteValMsgErro = ''
+&CteValTagPai = 328
+
+&CteValCodigo = 332
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Número do lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 331
+
+&CteValCodigo = 333
+&CteValTag = 'qtdRat'
+&CteValTagDescricao = 'Quantidade rateada'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 72
+&CteValMsgErro = '[#inv0072] Quantidade rateada não possui um valor válido. Para [qtdRat] informe um número com 5 posições, sendo 3 inteiras e 2 decimais.'
+&CteValTagPai = 328
+
+&CteValCodigo = 334
+&CteValTag = 'docAnt'
+&CteValTagDescricao = 'Documentos de Transporte Anterior'
+&CteValRegEx = ''
+&CteValCodMsgErro = 242
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 335
+&CteValTag = 'emiDocAnt'
+&CteValTagDescricao = 'Emissor do documento anterior'
+&CteValRegEx = ''
+&CteValCodMsgErro = 243
+&CteValMsgErro = ''
+&CteValTagPai = 334
+
+&CteValCodigo = 336
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{0}$|^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário. Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros. Informar os zeros não significativos.'
+&CteValTagPai = 335
+
+&CteValCodigo = 337
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 335
+
+&CteValCodigo = 338
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{2,14}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe números de 2 a 14 dígitos.'
+&CteValTagPai = 335
+
+&CteValCodigo = 339
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 335
+
+&CteValCodigo = 340
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 335
+
+&CteValCodigo = 341
+&CteValTag = 'idDocAnt'
+&CteValTagDescricao = 'Informações de identificação dos documentos de Transporte Anterior'
+&CteValRegEx = ''
+&CteValCodMsgErro = 244
+&CteValMsgErro = ''
+&CteValTagPai = 335
+
+&CteValCodigo = 342
+&CteValTag = 'idDocAntPap'
+&CteValTagDescricao = 'Documentos de transporte anterior em papel'
+&CteValRegEx = ''
+&CteValCodMsgErro = 245
+&CteValMsgErro = ''
+&CteValTagPai = 341
+
+&CteValCodigo = 343
+&CteValTag = 'tpDoc'
+&CteValTagDescricao = 'Tipo do Documento de Transporte Anterior'
+&CteValRegEx = '^07$|^08$|^09$|^10$|^11$|^12$|^13$'
+&CteValCodMsgErro = 127
+&CteValMsgErro = '[#inv0127] Tipo do Documento de Transporte Anterior não possui um valor válido. Para [tpDoc] preencha com: 07-ATRE; 08-DTA(Despacho de Transito Aduaneiro); 09-Conhecimento Aéreo Internacional; 10 - Conhecimento - Carta de Porte Internacional; 11 - Conhecimento Avulso; 12 - TIF (Transporte Internacional Ferroviário); 13 - BL (Bill of Lading); '
+&CteValTagPai = 342
+
+&CteValCodigo = 344
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série do CT-e'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série do CT-e não possui um valor válido. Para [serie] informe caracteres entre 1 e 3 dígitos.'
+&CteValTagPai = 342
+
+&CteValCodigo = 345
+&CteValTag = 'subser'
+&CteValTagDescricao = 'Série do Documento Fiscal'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série do Documento Fiscal não possui um valor válido. Para [subser] informe caracteres entre 1 e 2 dígitos.'
+&CteValTagPai = 342
+
+&CteValCodigo = 346
+&CteValTag = 'nDoc'
+&CteValTagDescricao = 'Número'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 246
+&CteValMsgErro = '[#inv0246] Número não possui um valor válido. Para [nDoc] informe números de 1 a 20 dígitos.'
+&CteValTagPai = 342
+
+&CteValCodigo = 347
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de Emissão'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Emissão não possui um valor válido. Para [dEmi] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 342
+
+&CteValCodigo = 348
+&CteValTag = 'idDocAntEle'
+&CteValTagDescricao = 'Documentos de transporte anterior eletrônicos'
+&CteValRegEx = ''
+&CteValCodMsgErro = 247
+&CteValMsgErro = ''
+&CteValTagPai = 341
+
+&CteValCodigo = 349
+&CteValTag = 'chave'
+&CteValTagDescricao = 'Chave de acesso do CT-e'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e do documento anterior não possui um valor válido. Para [chave] informe um número de 44 dígitos.'
+&CteValTagPai = 348
+
+&CteValCodigo = 350
+&CteValTag = 'infModal'
+&CteValTagDescricao = 'Informações do modal'
+&CteValRegEx = ''
+&CteValCodMsgErro = 253
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 351
+&CteValTag = 'versaoModal'
+&CteValTagDescricao = 'Versão do modal'
+&CteValRegEx = '^3\.(0[0-9]$|^[1-9][0-9])$'
+&CteValCodMsgErro = 254
+&CteValMsgErro = '[#inv0254] Versão do modal não possui um valor válido. Para [versaoModal] informe 2.00 ou a versão atual do schema.'
+&CteValTagPai = 350
+
+&CteValCodigo = 352
+&CteValTag = 'rodo'
+&CteValTagDescricao = ''
+&CteValRegEx = ''
+&CteValCodMsgErro = 255
+&CteValMsgErro = ''
+&CteValTagPai = 350
+
+&CteValCodigo = 353
+&CteValTag = 'RNTRC'
+&CteValTagDescricao = 'Registro Nacional de Transportadores Rodoviários de Carga'
+&CteValRegEx = '^[0-9]{8}$|^ISENTO$'
+&CteValCodMsgErro = 256
+&CteValMsgErro = '[#inv0256] Registro Nacional de Transportadores Rodoviários de Carga não possui um valor válido. Para [RNTRC] informe números de até 8 dígitos ou ISENTO. Registro obrigatório do emitente do CT-e junto à ANTT para exercer a atividade de transportador rodoviário de cargas por conta de terceiros e mediante remuneração.'
+&CteValTagPai = 352
+
+&CteValCodigo = 354
+&CteValTag = 'occ'
+&CteValTagDescricao = 'Ordens de Coleta associados'
+&CteValRegEx = ''
+&CteValCodMsgErro = 258
+&CteValMsgErro = ''
+&CteValTagPai = 352
+
+&CteValCodigo = 355
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série da OCC'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série da OCC não possui um valor válido. Para [serie] informe caracteres entre 1 e 3 dígitos.'
+&CteValTagPai = 354
+
+&CteValCodigo = 356
+&CteValTag = 'nOcc'
+&CteValTagDescricao = 'Número da Ordem de coleta'
+&CteValRegEx = '^[1-9]{1}[0-9]{0,5}$'
+&CteValCodMsgErro = 259
+&CteValMsgErro = '[#inv0259] Número da Ordem de coleta não possui um valor válido. Para [nOcc] informe números entre 1 e 3 dígitos.'
+&CteValTagPai = 354
+
+&CteValCodigo = 357
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de emissão da ordem de coleta'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de emissão da ordem de coleta não possui um valor válido. Para [dEmi] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 354
+
+&CteValCodigo = 358
+&CteValTag = 'emiOcc'
+&CteValTagDescricao = ''
+&CteValRegEx = ''
+&CteValCodMsgErro = 260
+&CteValMsgErro = ''
+&CteValTagPai = 354
+
+&CteValCodigo = 359
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 358
+
+&CteValCodigo = 360
+&CteValTag = 'cInt'
+&CteValTagDescricao = 'Código interno de uso da transportadora'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 261
+&CteValMsgErro = '[#inv0261] Código interno de uso da transportadora não possui um valor válido. Para [cInt] informe caracteres entre 1 e 10 dígitos.'
+&CteValTagPai = 358
+
+&CteValCodigo = 361
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{2,14}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe números de 2 a 14 dígitos.'
+&CteValTagPai = 358
+
+&CteValCodigo = 362
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 358
+
+&CteValCodigo = 363
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone'
+&CteValRegEx = '^[0-9]{6,14}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone não possui um valor válido. Para [fone] informe somente números, ente 6 e 14 dígitos.'
+&CteValTagPai = 358
+
+&CteValCodigo = 364
+&CteValTag = 'aereo'
+&CteValTagDescricao = 'Informações do modal Aéreo'
+&CteValRegEx = ''
+&CteValCodMsgErro = 277
+&CteValMsgErro = ''
+&CteValTagPai = 350
+
+&CteValCodigo = 365
+&CteValTag = 'nMinu'
+&CteValTagDescricao = 'Número da Minuta'
+&CteValRegEx = '^[0-9]{9}$'
+&CteValCodMsgErro = 278
+&CteValMsgErro = '[#inv0278] Número da Minuta não possui um valor válido. Para [nMinu] informe números de 1 a 9 dígitos. Documento que precede o CT-e, assinado pelo expedidor, espécie de pedido de serviço'
+&CteValTagPai = 364
+
+&CteValCodigo = 366
+&CteValTag = 'nOCA'
+&CteValTagDescricao = 'Número Operacional do Conhecimento Aéreo'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 279
+&CteValMsgErro = '[#inv0279] Número Operacional do Conhecimento Aéreo não possui um valor válido. Para [nOCA] informe números de 1 a 11 dígitos. Os três primeiros dígitos representam um código que os operadores de transporte aéreo associados à IATA possuem. Em seguida um número de série de sete dígitos determinados pelo operador de tansporte aéreo. Para finalizar, um dígito verificador'
+&CteValTagPai = 364
+
+&CteValCodigo = 367
+&CteValTag = 'dPrevAereo'
+&CteValTagDescricao = 'Data prevista da entrega'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data prevista da entrega não possui um valor válido. Para [dPrevAereo] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 364
+
+&CteValCodigo = 368
+&CteValTag = 'tarifa'
+&CteValTagDescricao = 'Informações de tarifa'
+&CteValRegEx = ''
+&CteValCodMsgErro = 282
+&CteValMsgErro = ''
+&CteValTagPai = 364
+
+&CteValCodigo = 369
+&CteValTag = 'CL'
+&CteValTagDescricao = 'Classe'
+&CteValRegEx = '^M$|^G$|^E$'
+&CteValCodMsgErro = 283
+&CteValMsgErro = '[#inv0283] Classe não possui um valor válido. Para [CL] preencha com: M - Tarifa Mínima; G - Tarifa Geral; E - Tarifa Específica'
+&CteValTagPai = 368
+
+&CteValCodigo = 370
+&CteValTag = 'cTar'
+&CteValTagDescricao = 'Código da Tarifa'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 284
+&CteValMsgErro = '[#inv0284] Código da Tarifa não possui um valor válido. Para [cTar] informe caracteres entre 1 e 4 dígitos. Deverão ser incluídos os códigos de três dígitos, correspondentes à tarifa.'
+&CteValTagPai = 368
+
+&CteValCodigo = 371
+&CteValTag = 'vTar'
+&CteValTagDescricao = 'Valor da Tarifa'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Tarifa não possui um valor válido. Para [vTar] informe um número de 15 posições, sendo 13 inteiras e 2 decimais. Valor da tarifa por kg quando for o caso.'
+&CteValTagPai = 368
+
+&CteValCodigo = 372
+&CteValTag = 'natCarga'
+&CteValTagDescricao = 'Natureza da carga'
+&CteValRegEx = ''
+&CteValCodMsgErro = 285
+&CteValMsgErro = ''
+&CteValTagPai = 364
+
+&CteValCodigo = 373
+&CteValTag = 'xDime'
+&CteValTagDescricao = 'Dimensão'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 286
+&CteValMsgErro = '[#inv0286] Dimensão não possui um valor válido. Para [xDime] informe caracteres entre 5 e 14 dígitos. Formato:1234X1234X1234 (cm). Esse campo deve sempre que possível ser preenchido. Entretanto, quando for impossível o preenchimento das dimensões, fica obrigatório o preechimento da cubagem em metro cúbico da #tag 281 do leiaute do CT-e da estrutura genérica.'
+&CteValTagPai = 372
+
+&CteValCodigo = 374
+&CteValTag = 'cInfManu'
+&CteValTagDescricao = 'Informações de manuseio'
+&CteValRegEx = '^1$|^2$|^3$|^4$|^5$|^6$|^7$|^8$|^9$|^10$|^11$|^12$|^13$|^14$|^15$|^99$'
+&CteValCodMsgErro = 287
+&CteValMsgErro = '[#inv0287] Informações de manuseio não possui um valor válido. Para [cInfManu] preencha com: 1 - certificado do expedidor para embarque de animal vivo; 2 - artigo perigoso conforme Declaração do Expedidor anexa; 3 - somente em aeronave cargueira; 4 - artigo perigoso - declaração do expedidor não requerida; 5 - artigo perigoso em quantidade isenta; 6 - gelo seco para refrigeração (especificar no campo observações a quantidade); 7 - não restrito (especificar a Disposição Especial no campo observações); 8 - artigo perigoso em carga consolidada (especificar a quantidade no campo observações); 9 - autorização da autoridade governamental anexa (especificar no campo observações); 10 - baterias de íons de lítio em conformidade com a Seção II da PI965 – CAO; 11 - baterias de íons de lítio em conformidade com a Seção II da PI966; 12 - baterias de íons de lítio em conformidade com a Seção II da PI967; 13 - baterias de metal lítio em conformidade com a Seção II da PI968 — CAO; 14 - baterias de metal lítio em conformidade com a Seção II da PI969; 15 - baterias de metal lítio em conformidade com a Seção II da PI970; 99 - outro (especificar no campo observações);'
+&CteValTagPai = 372
+
+&CteValCodigo = 375
+&CteValTag = 'peri'
+&CteValTagDescricao = 'Preenchido quando for transporte de produtos classificados pela ONU como perigosos.'
+&CteValRegEx = ''
+&CteValCodMsgErro = 348
+&CteValMsgErro = ''
+&CteValTagPai = 364
+
+&CteValCodigo = 376
+&CteValTag = 'nONU'
+&CteValTagDescricao = 'Número ONU/UN'
+&CteValRegEx = '^[0-9]{4}$|^ND$'
+&CteValCodMsgErro = 318
+&CteValMsgErro = '[#inv0318] Número ONU/UN não possui um valor válido. Para [nONU] verificar a legislação de transporte de produtos perigosos aplicadas ao modal'
+&CteValTagPai = 375
+
+&CteValCodigo = 377
+&CteValTag = 'qTotEmb'
+&CteValTagDescricao = 'Quantidade total de volumes contendo artigos perigosos'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 347
+&CteValMsgErro = '[#inv0347] Quantidade total de volumes contendo artigos perigosos não possui um valor válido. Para [qTotEmb] preencher com o número de volumes (unidades) de artigos perigosos, ou seja, cada embalagem devidamente marcada e etiquetada (por ex.: número de caixas, de tambores, de bombonas, dentre outros). Não deve ser preenchido com o número de ULD, pallets ou containers.'
+&CteValTagPai = 375
+
+&CteValCodigo = 378
+&CteValTag = 'infTotAP'
+&CteValTagDescricao = 'Grupo de informações das quantidades totais de artigos perigosos'
+&CteValRegEx = ''
+&CteValCodMsgErro = 349
+&CteValMsgErro = ''
+&CteValTagPai = 364
+
+&CteValCodigo = 379
+&CteValTag = 'qTotProd'
+&CteValTagDescricao = 'Quantidade total de artigos perigosos'
+&CteValRegEx = '^0|0\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\.[0-9]{4})?$'
+&CteValCodMsgErro = 347
+&CteValMsgErro = '[#inv0347] Quantidade total de artigos perigosos não possui um valor válido. Para [qTotProd] informe: 15 posições, sendo 11 inteiras e 4 decimais. Deve indicar a quantidade total do artigo perigoso, tendo como base a unidade referenciada na Tabela 3-1 do Doc 9284, por exemplo: litros; quilogramas; quilograma bruto etc. O preenchimento não deve, entretanto, incluir a unidade de medida. No caso de transporte de material radioativo, deve-se indicar o somatório dos Índices de Transporte (TI). Não indicar a quantidade do artigo perigoso por embalagem.'
+&CteValTagPai = 378
+
+&CteValCodigo = 380
+&CteValTag = 'uniAP'
+&CteValTagDescricao = 'Unidade de medida'
+&CteValRegEx = '^1$|^2$|^3$|^4$|^5$'
+&CteValCodMsgErro = 350
+&CteValMsgErro = '[#inv0350] Unidade de Medida não possui um valor válido. Para [uniAP] preencher com: 1 – KG; 2 – KG G (quilograma bruto); 3 – LITROS; 4 – TI (índice de transporte para radioativos); 5- Unidades (apenas para artigos perigosos medidos em unidades que não se enquadram nos itens acima. Exemplo: baterias, celulares, equipamentos, veículos, dentre outros)'
+&CteValTagPai = 378
+
+&CteValCodigo = 381
+&CteValTag = 'aquav'
+&CteValTagDescricao = 'Informações do modal Aquaviário'
+&CteValRegEx = ''
+&CteValCodMsgErro = 289
+&CteValMsgErro = ''
+&CteValTagPai = 350
+
+&CteValCodigo = 382
+&CteValTag = 'vPrest'
+&CteValTagDescricao = 'Valor da Prestação Base de Cálculo do AFRMM'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da Prestação Base de Cálculo do AFRMM não possui um valor válido. Para [vPrest] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 381
+
+&CteValCodigo = 383
+&CteValTag = 'vAFRMM'
+&CteValTagDescricao = 'AFRMM (Adicional de Frete para Renovação da Marinha Mercante)'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 110
+&CteValMsgErro = '[#inv0110] AFRMM (Adicional de Frete para Renovação da Marinha Mercante) não possui um valor válido. Para [vAFRMM] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 381
+
+&CteValCodigo = 384
+&CteValTag = 'xNavio'
+&CteValTagDescricao = 'Identificação do Navio'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 292
+&CteValMsgErro = '[#inv0292] Identificação do Navio não possui um valor válido. Para [xNavio] informe caracteres ente 1 e 60 dígitos.'
+&CteValTagPai = 381
+
+&CteValCodigo = 385
+&CteValTag = 'balsa'
+&CteValTagDescricao = 'Grupo de informações das balsas'
+&CteValRegEx = ''
+&CteValCodMsgErro = 293
+&CteValMsgErro = ''
+&CteValTagPai = 381
+
+&CteValCodigo = 386
+&CteValTag = 'xBalsa'
+&CteValTagDescricao = 'Identificador da Balsa'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 294
+&CteValMsgErro = '[#inv0294] Identificador da Balsa não possui um valor válido. Para [xBalsa] informe caracteres ente 1 e 60 dígitos.'
+&CteValTagPai = 385
+
+&CteValCodigo = 387
+&CteValTag = 'nViag'
+&CteValTagDescricao = 'Número da Viagem'
+&CteValRegEx = '^[1-9]{1}[0-9]{0,9}$'
+&CteValCodMsgErro = 295
+&CteValMsgErro = '[#inv0295] Número da Viagem não possui um valor válido. Para [nViag] informe caracteres ente 1 e 10 dígitos.'
+&CteValTagPai = 381
+
+&CteValCodigo = 388
+&CteValTag = 'direc'
+&CteValTagDescricao = 'Direção'
+&CteValRegEx = '^N$|^S$|^L$|^O$'
+&CteValCodMsgErro = 296
+&CteValMsgErro = '[#inv0296] Direção não possui um valor válido. Para [direc] preencha com: N-Norte, L-Leste, S-Sul, O-Oeste'
+&CteValTagPai = 381
+
+&CteValCodigo = 389
+&CteValTag = 'tpNav'
+&CteValTagDescricao = 'Tipo de Navegação'
+&CteValRegEx = '^0$|^1$'
+&CteValCodMsgErro = 297
+&CteValMsgErro = '[#inv0297] Tipo de Navegação não possui um valor válido. Para [tpNav] preencha com: 0 - Interior; 1 - Cabotagem'
+&CteValTagPai = 381
+
+&CteValCodigo = 390
+&CteValTag = 'irin'
+&CteValTagDescricao = 'Irin do navio sempre deverá ser informado'
+&CteValRegEx = '^.{1,10}$'
+&CteValCodMsgErro = 298
+&CteValMsgErro = '[#inv0298] Irin do navio sempre deverá ser informado não possui um valor válido. Para [irin] informe caracteres ente 1 e 10 dígitos.'
+&CteValTagPai = 381
+
+&CteValCodigo = 391
+&CteValTag = 'detCont'
+&CteValTagDescricao = 'Grupo de informações de detalhamento dos conteiners
+(Somente para Redespacho Intermediário e Serviço Vinculado a Multimodal)'
+&CteValRegEx = ' '
+&CteValCodMsgErro = 351
+&CteValMsgErro = ''
+&CteValTagPai = 381
+
+&CteValCodigo = 392
+&CteValTag = 'nCont'
+&CteValTagDescricao = 'Identificação do Container'
+&CteValRegEx = '^[A-Z0-9]+$'
+&CteValCodMsgErro = 352
+&CteValMsgErro = '[#inv0352] Identificação do container não possui um valor válido. Para [nCont] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 391
+
+&CteValCodigo = 393
+&CteValTag = 'lacre'
+&CteValTagDescricao = 'Grupo de informações dos lacres dos cointainers da qtde da carga'
+&CteValRegEx = ' '
+&CteValCodMsgErro = ''
+&CteValMsgErro = ''
+&CteValTagPai = 391
+
+&CteValCodigo = 394
+&CteValTag = 'nLacre'
+&CteValTagDescricao = 'Lacre'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 70
+&CteValMsgErro = '[#inv0070] Número do lacre não possui um valor válido. Para [nLacre] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 393
+
+&CteValCodigo = 395
+&CteValTag = 'infDoc'
+&CteValTagDescricao = 'Informações dos documentos dos conteiners'
+&CteValRegEx = ''
+&CteValCodMsgErro = 353
+&CteValMsgErro = ''
+&CteValTagPai = 391
+
+&CteValCodigo = 396
+&CteValTag = 'infNF'
+&CteValTagDescricao = 'Informações das NF'
+&CteValRegEx = ''
+&CteValCodMsgErro = 354
+&CteValMsgErro = ''
+&CteValTagPai = 395
+
+&CteValCodigo = 397
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série da NF não possui um valor válido. Para [serie] informe caracteres entre 1 e 3 dígitos.'
+&CteValTagPai = 396
+
+&CteValCodigo = 398
+&CteValTag = 'nDoc'
+&CteValTagDescricao = 'Número'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 218
+&CteValMsgErro = '[#inv0218] Número não possui um valor válido. Para [nDoc] informe caracteres entre 1 e 20 dígitos.'
+&CteValTagPai = 396
+
+&CteValCodigo = 399
+&CteValTag = 'unidRat'
+&CteValTagDescricao = 'Unidade de medida rateada (Peso,Volume)'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 355
+&CteValMsgErro = '[#inv0355] Unidade de Medida Rateada não possui um valor válido. Para [unidRat] informe 5 posições, sendo 3 inteiras e 2 a 3 casas decimais.'
+&CteValTagPai = 396
+
+&CteValCodigo = 400
+&CteValTag = 'infNFe'
+&CteValTagDescricao = 'Informações das NFe'
+&CteValRegEx = ''
+&CteValCodMsgErro = 356
+&CteValMsgErro = ''
+&CteValTagPai = 395
+
+&CteValCodigo = 401
+&CteValTag = 'chave'
+&CteValTagDescricao = 'Chave de acesso da NF-e'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso da NF-e não possui um valor válido. Para [chave] informe um número de 44 dígitos.'
+&CteValTagPai = 400
+
+&CteValCodigo = 402
+&CteValTag = 'unidRat'
+&CteValTagDescricao = 'Unidade de medida rateada (Peso,Volume)'
+&CteValRegEx = '^[0-9]{1,3}(\.[0-9]{2,3})?$'
+&CteValCodMsgErro = 355
+&CteValMsgErro = '[#inv0355] Unidade de Medida Rateada não possui um valor válido. Para [unidRat] informe 5 posições, sendo 3 inteiras e 2 a 3 casas decimais.'
+&CteValTagPai = 400
+
+&CteValCodigo = 403
+&CteValTag = 'ferrov'
+&CteValTagDescricao = 'Informações do modal Ferroviário'
+&CteValRegEx = ''
+&CteValCodMsgErro = 299
+&CteValMsgErro = ''
+&CteValTagPai = 350
+
+&CteValCodigo = 404
+&CteValTag = 'tpTraf'
+&CteValTagDescricao = 'Tipo de Tráfego'
+&CteValRegEx = '^0$|^1$|^2$|^3$'
+&CteValCodMsgErro = 300
+&CteValMsgErro = '[#inv0300] Tipo de Tráfego não possui um valor válido. Para [tpTraf] preencha com: 0-Próprio; 1-Mútuo; 2-Rodoferroviário; 3-Rodoviário.'
+&CteValTagPai = 403
+
+&CteValCodigo = 405
+&CteValTag = 'trafMut'
+&CteValTagDescricao = 'Detalhamento de informações para o tráfego mútuo'
+&CteValRegEx = ''
+&CteValCodMsgErro = 301
+&CteValMsgErro = ''
+&CteValTagPai = 403
+
+&CteValCodigo = 406
+&CteValTag = 'respFat'
+&CteValTagDescricao = 'Responsável pelo Faturamento'
+&CteValRegEx = '^1$|^2$'
+&CteValCodMsgErro = 302
+&CteValMsgErro = '[#inv0302] Responsável pelo Faturamento não possui um valor válido. Para [respFat] preencha com: 1-Ferrovia de origem; 2-Ferrovia de destino'
+&CteValTagPai = 405
+
+&CteValCodigo = 407
+&CteValTag = 'ferrEmi'
+&CteValTagDescricao = 'Ferrovia Emitente do CTe'
+&CteValRegEx = '^1$|^2$'
+&CteValCodMsgErro = 303
+&CteValMsgErro = '[#inv0303] Ferrovia Emitente do CTe não possui um valor válido. Para [ferrEmi] preencha com: 1-Ferrovia de origem; 2-Ferrovia de destino'
+&CteValTagPai = 405
+
+&CteValCodigo = 408
+&CteValTag = 'fluxo'
+&CteValTagDescricao = 'Fluxo Ferroviário'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 304
+&CteValMsgErro = '[#inv0304] Fluxo Ferroviário não possui um valor válido. Para [fluxo] informe caracteres ente 1 e 10 dígitos. Trata-se de um número identificador do contrato firmado com o cliente'
+&CteValTagPai = 403
+
+&CteValCodigo = 409
+&CteValTag = 'vFrete'
+&CteValTagDescricao = 'Valor do Frete'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do Frete não possui um valor válido. Para [vFrete] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 405
+
+&CteValCodigo = 410
+&CteValTag = 'chCTeFerroOrigem'
+&CteValTagDescricao = 'Chave de acesso do CT-e emitido pelo ferrovia de origem'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e emitido pela ferrovia de origem não possui um valor válido. Para [chave] informe um número de 44 dígitos.'
+&CteValTagPai = 405
+
+&CteValCodigo = 411
+&CteValTag = 'ferroEnv'
+&CteValTagDescricao = 'Informações das Ferrovias Envolvidas'
+&CteValRegEx = ''
+&CteValCodMsgErro = 306
+&CteValMsgErro = ''
+&CteValTagPai = 405
+
+&CteValCodigo = 412
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 411
+
+&CteValCodigo = 413
+&CteValTag = 'cInt'
+&CteValTagDescricao = 'Código interno da Ferrovia envolvida'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 307
+&CteValMsgErro = '[#inv0307] Código interno da Ferrovia envolvida não possui um valor válido. Para [cInt] informe caracteres ente 1 e 10 dígitos. Uso da transportadora'
+&CteValTagPai = 411
+
+&CteValCodigo = 414
+&CteValTag = 'IE'
+&CteValTagDescricao = 'Inscrição Estadual'
+&CteValRegEx = '^[0-9]{2,14}$'
+&CteValCodMsgErro = 22
+&CteValMsgErro = '[#inv0022] Inscrição Estadual não possui um valor válido. Para [IE] informe números de 2 a 14 dígitos.'
+&CteValTagPai = 411
+
+&CteValCodigo = 415
+&CteValTag = 'xNome'
+&CteValTagDescricao = 'Razão Social ou Nome'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 23
+&CteValMsgErro = '[#inv0023] Razão Social ou Nome não possui um valor válido. Para [xNome] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 411
+
+&CteValCodigo = 416
+&CteValTag = 'enderFerro'
+&CteValTagDescricao = 'Dados do endereço da ferrovia envolvida'
+&CteValRegEx = ''
+&CteValCodMsgErro = 308
+&CteValMsgErro = ''
+&CteValTagPai = 411
+
+&CteValCodigo = 417
+&CteValTag = 'xLgr'
+&CteValTagDescricao = 'Logradouro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Logradouro não possui um valor válido. Para [xLgr] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 416
+
+&CteValCodigo = 418
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 309
+&CteValMsgErro = '[#inv0309] Número não possui um valor válido. Para [nro] informe caracteres ente 1 e 60 dígitos.'
+&CteValTagPai = 416
+
+&CteValCodigo = 419
+&CteValTag = 'xCpl'
+&CteValTagDescricao = 'Complemento'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 120
+&CteValMsgErro = '[#inv0120] Complemento não possui um valor válido. Para [xCpl] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 416
+
+&CteValCodigo = 420
+&CteValTag = 'xBairro'
+&CteValTagDescricao = 'Bairro'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 112
+&CteValMsgErro = '[#inv0112] Bairro não possui um valor válido. Para [xBairro] informe caracteres entre 2 e 60 dígitos.'
+&CteValTagPai = 416
+
+&CteValCodigo = 421
+&CteValTag = 'cMun'
+&CteValTagDescricao = 'Código do município'
+&CteValRegEx = '^[0-9]{7}$'
+&CteValCodMsgErro = 19
+&CteValMsgErro = '[#inv0019] Código do município não possui um valor válido. Para [cMun] informe um número de 7 dígitos, conforme a tabela do IBGE ou 9999999 para operações com o exterior.'
+&CteValTagPai = 416
+
+&CteValCodigo = 422
+&CteValTag = 'xMun'
+&CteValTagDescricao = 'Nome do município'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 20
+&CteValMsgErro = '[#inv0020] Nome do município não possui um valor válido. Para [xMun] informe caracteres entre 2 e 60 dígitos ou EXTERIOR para operações com o exterior.'
+&CteValTagPai = 416
+
+&CteValCodigo = 423
+&CteValTag = 'CEP'
+&CteValTagDescricao = 'CEP'
+&CteValRegEx = '^[0-9]{8}$'
+&CteValCodMsgErro = 117
+&CteValMsgErro = '[#inv0117] CEP não possui um valor válido. Para [CEP] informe os zeros não significativos'
+&CteValTagPai = 416
+
+&CteValCodigo = 424
+&CteValTag = 'UF'
+&CteValTagDescricao = 'Sigla da UF'
+&CteValRegEx = '^AC$|^AL$|^AM$|^AP$|^BA$|^CE$|^DF$|^ES$|^GO$|^MA$|^MG$|^MS$|^MT$|^PA$|^PB$|^PE$|^PI$|^PR$|^RJ$|^RN$|^RO$|^RR$|^RS$|^SC$|^SE$|^SP$|^TO$|^EX$'
+&CteValCodMsgErro = 8
+&CteValMsgErro = '[#inv0008] Sigla da UF não possui um valor válido. Para [UF] informe uma sigla existente na tabela do IBGE ou EX para exterior.'
+&CteValTagPai = 416
+
+&CteValCodigo = 425
+&CteValTag = 'duto'
+&CteValTagDescricao = 'Informações do modal Dutoviário'
+&CteValRegEx = ''
+&CteValCodMsgErro = 313
+&CteValMsgErro = ''
+&CteValTagPai = 350
+
+&CteValCodigo = 426
+&CteValTag = 'vTar'
+&CteValTagDescricao = 'Valor da tarifa'
+&CteValRegEx = '^0\.[1-9]{1}[0-9]{5}$|^0\.[0-9]{1}[1-9]{1}[0-9]{4}$|^0\.[0-9]{2}[1-9]{1}[0-9]{3}$|^0\.[0-9]{3}[1-9]{1}[0-9]{2}$|^0\.[0-9]{4}[1-9]{1}[0-9]{1}$|^0\.[0-9]{5}[1-9]{1}$|^[1-9]{1}[0-9]{0,8}(\.[0-9]{6})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da tarifa não possui um valor válido. Para [vTar] informe um número de 15 posições, sendo 9 inteiras e 6 decimais.'
+&CteValTagPai = 425
+
+&CteValCodigo = 427
+&CteValTag = 'dIni'
+&CteValTagDescricao = 'Data de Início da prestação do serviço'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Início da prestação do serviço não possui um valor válido. Para [dIni] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 425
+
+&CteValCodigo = 428
+&CteValTag = 'dFim'
+&CteValTagDescricao = 'Data de Fim da prestação do serviço'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Fim da prestação do serviço não possui um valor válido. Para [dFim] informe uma data no formato AAAA-MM-DD'
+&CteValTagPai = 425
+
+&CteValCodigo = 429
+&CteValTag = 'veicNovos'
+&CteValTagDescricao = 'Informações dos veículos transportados'
+&CteValRegEx = ''
+&CteValCodMsgErro = 325
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 430
+&CteValTag = 'chassi'
+&CteValTagDescricao = 'Chassi do veículo'
+&CteValRegEx = '^[A-Z0-9]+$'
+&CteValCodMsgErro = 326
+&CteValMsgErro = '[#inv0326] Chassi do veículo não possui um valor válido. Para [chassi] informe 17 caracteres.'
+&CteValTagPai = 429
+
+&CteValCodigo = 431
+&CteValTag = 'cCor'
+&CteValTagDescricao = 'Cor do veículo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 121
+&CteValMsgErro = '[#inv0121] Cor do veículo não possui um valor válido. Para [cCor] informe o código da cor, entre 1 e 4 caracteres (código de cada montadora)'
+&CteValTagPai = 429
+
+&CteValCodigo = 432
+&CteValTag = 'xCor'
+&CteValTagDescricao = 'Descrição da cor'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 122
+&CteValMsgErro = '[#inv0122] Descrição da cor não possui um valor válido. Para [xCor] informe números de 1 a 20 dígitos.'
+&CteValTagPai = 429
+
+&CteValCodigo = 433
+&CteValTag = 'cMod'
+&CteValTagDescricao = 'Código Marca Modelo'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 327
+&CteValMsgErro = '[#inv0327] Código Marca Modelo não possui um valor válido. Para [cMod] informe caracteres ente 1 e 6 dígitos. Utilize a tabela RENAVAM'
+&CteValTagPai = 429
+
+&CteValCodigo = 434
+&CteValTag = 'vUnit'
+&CteValTagDescricao = 'Valor Unitário do Veículo'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor Unitário do Veículo não possui um valor válido. Para [vUnit] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 429
+
+&CteValCodigo = 435
+&CteValTag = 'vFrete'
+&CteValTagDescricao = 'Frete Unitário'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 328
+&CteValMsgErro = '[#inv0328] Frete Unitário não possui um valor válido. Para [vFrete] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 429
+
+&CteValCodigo = 436
+&CteValTag = 'cobr'
+&CteValTagDescricao = 'Dados da cobrança do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 329
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 437
+&CteValTag = 'fat'
+&CteValTagDescricao = 'Dados da fatura'
+&CteValRegEx = ''
+&CteValCodMsgErro = 330
+&CteValMsgErro = ''
+&CteValTagPai = 436
+
+&CteValCodigo = 438
+&CteValTag = 'nFat'
+&CteValTagDescricao = 'Número da fatura'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 331
+&CteValMsgErro = '[#inv0331] Número da fatura não possui um valor válido. Para [nFat] informe caracteres entre 1 e 40 dígitos.'
+&CteValTagPai = 437
+
+&CteValCodigo = 439
+&CteValTag = 'vOrig'
+&CteValTagDescricao = 'Valor original da fatura'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor original da fatura não possui um valor válido. Para [vOrig] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 437
+
+&CteValCodigo = 440
+&CteValTag = 'vDesc'
+&CteValTagDescricao = 'Valor do desconto da fatura'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do desconto da fatura não possui um valor válido. Para [vDesc] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 437
+
+&CteValCodigo = 441
+&CteValTag = 'vLiq'
+&CteValTagDescricao = 'Valor líquido da fatura'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor líquido da fatura não possui um valor válido. Para [vLiq] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 437
+
+&CteValCodigo = 442
+&CteValTag = 'dup'
+&CteValTagDescricao = 'Dados das duplicatas'
+&CteValRegEx = ''
+&CteValCodMsgErro = 332
+&CteValMsgErro = ''
+&CteValTagPai = 436
+
+&CteValCodigo = 443
+&CteValTag = 'nDup'
+&CteValTagDescricao = 'Número da duplicata'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 333
+&CteValMsgErro = '[#inv0333] Número da duplicata não possui um valor válido. Para [nDup] informe caracteres entre 1 e 60 dígitos.'
+&CteValTagPai = 442
+
+&CteValCodigo = 444
+&CteValTag = 'dVenc'
+&CteValTagDescricao = 'Data de vencimento da duplicata'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de vencimento da duplicata não possui um valor válido. Para [dVenc] informe uma data no formado AAAA-MM-DD'
+&CteValTagPai = 442
+
+&CteValCodigo = 445
+&CteValTag = 'vDup'
+&CteValTagDescricao = 'Valor da duplicata'
+&CteValRegEx = '^0\.[0-9]{1}[1-9]{1}$|^0\.[1-9]{1}[0-9]{1}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor da duplicata não possui um valor válido. Para [vDup] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 442
+
+&CteValCodigo = 446
+&CteValTag = 'infCteSub'
+&CteValTagDescricao = 'Informações do CT-e de substituição'
+&CteValRegEx = ''
+&CteValCodMsgErro = 334
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 447
+&CteValTag = 'chCte'
+&CteValTagDescricao = 'Chave de acesso do CT-e a ser substituído (original)'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e a ser substituído (original) não possui um valor válido. Para [chCte] informe um número de 44 dígitos.'
+&CteValTagPai = 446
+
+&CteValCodigo = 448
+&CteValTag = 'refCteAnu'
+&CteValTagDescricao = 'Chave de acesso do CT-e de Anulação'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e de anulação não possui um valor válido. Para [refCteAnu] informe um número de 44 dígitos.'
+&CteValTagPai = 446
+
+&CteValCodigo = 449
+&CteValTag = 'tomaICMS'
+&CteValTagDescricao = 'Tomador é contribuinte do ICMS'
+&CteValRegEx = ''
+&CteValCodMsgErro = 335
+&CteValMsgErro = ''
+&CteValTagPai = 446
+
+&CteValCodigo = 450
+&CteValTag = 'refNFe'
+&CteValTagDescricao = 'Chave de acesso da NF-e emitida pelo Tomador'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso da NF-e emitida pelo Tomador não possui um valor válido. Para [refNFe] informe um número de 44 dígitos.'
+&CteValTagPai = 449
+
+&CteValCodigo = 451
+&CteValTag = 'refNF'
+&CteValTagDescricao = 'Informação da NF ou CT emitido pelo Tomador'
+&CteValRegEx = ''
+&CteValCodMsgErro = 336
+&CteValMsgErro = ''
+&CteValTagPai = 449
+
+&CteValCodigo = 452
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 451
+
+&CteValCodigo = 453
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 451
+
+&CteValCodigo = 454
+&CteValTag = 'mod'
+&CteValTagDescricao = 'Modelo do documento fiscal'
+&CteValRegEx = '^01$|^1B$|^02$|^2D$|^2E$|^04$|^06$|^07$|^08$|^8B$|^09$|^10$|^11$|^13$|^14$|^15$|^16$|^17$|^18$|^20$|^21$|^22$|^23$|^24$|^25$|^26$|^27$|^28$|^55$'
+&CteValCodMsgErro = 127
+&CteValMsgErro = '[#inv0127] Modelo do documento fiscal não possui um valor válido. Para [mod] utilize o código 57 para identificação do CT-e'
+&CteValTagPai = 451
+
+&CteValCodigo = 455
+&CteValTag = 'serie'
+&CteValTagDescricao = 'Série do CT-e'
+&CteValRegEx = '^0$|^[1-9]{1}[0-9]{0,2}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Série do CT-e não possui um valor válido. Para [serie] informe 0 ou um número entre 1 e 3 dígitos (sem zeros a esquerda).'
+&CteValTagPai = 451
+
+&CteValCodigo = 456
+&CteValTag = 'subserie'
+&CteValTagDescricao = 'Subserie do documento fiscal'
+&CteValRegEx = '^0$|^[1-9]{1}[0-9]{0,2}$'
+&CteValCodMsgErro = 11
+&CteValMsgErro = '[#inv0011] Subserie do documento fiscal não possui um valor válido. Para [subserie] informe 0 ou um número entre 1 e 3 dígitos (sem zeros a esquerda).'
+&CteValTagPai = 451
+
+&CteValCodigo = 457
+&CteValTag = 'nro'
+&CteValTagDescricao = 'Número do documento fiscal'
+&CteValRegEx = '^[0-9]{1,6}$'
+&CteValCodMsgErro = 337
+&CteValMsgErro = '[#inv0337] Número do documento fiscal não possui um valor válido. Para [nro] informe um número entre 1 e 6 dígitos.'
+&CteValTagPai = 451
+
+&CteValCodigo = 458
+&CteValTag = 'valor'
+&CteValTagDescricao = 'Valor do documento fiscal'
+&CteValRegEx = '^0$|^0\.[0-9]{2}$|^[1-9]{1}[0-9]{0,12}(\.[0-9]{2,2})?$'
+&CteValCodMsgErro = 141
+&CteValMsgErro = '[#inv0141] Valor do documento fiscal não possui um valor válido. Para [valor] informe um número de 15 posições, sendo 13 inteiras e 2 decimais.'
+&CteValTagPai = 451
+
+&CteValCodigo = 459
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de Emissão'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Emissão não possui um valor válido. Para [dEmi] informe uma data no formado AAAA-MM-DD'
+&CteValTagPai = 451
+
+&CteValCodigo = 460
+&CteValTag = 'refCte'
+&CteValTagDescricao = 'Chave de acesso do CT-e emitido pelo Tomador'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e emitido pelo Tomador não possui um valor válido. Para [refCTe] informe um número de 44 dígitos.'
+&CteValTagPai = 449
+
+&CteValCodigo = 461
+&CteValTag = 'indAlteraToma'
+&CteValTagDescricao = 'Indicador de CT-e Alteração de Tomador'
+&CteValRegEx = '^1$'
+&CteValCodMsgErro = 557
+&CteValMsgErro = '[#inv0557] Indicador de CT-e Alteração de Tomador não possui um valor válido. Para [indAlteraToma] informe o valor 1'
+&CteValTagPai = 446
+
+&CteValCodigo = 462
+&CteValTag = 'infGlobalizado'
+&CteValTagDescricao = 'Informações do CT-e Globalizado'
+&CteValRegEx = ''
+&CteValCodMsgErro = 558
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 463
+&CteValTag = 'xObs'
+&CteValTagDescricao = 'Preencher com informações adicionais, legislação do regime especial, etc'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 178
+&CteValMsgErro = '[#inv0178] Informações adicionais do CT-e globalizado não possui um valor válido. Para [xObs] informe caracteres entre 15 e 256 dígitos.'
+&CteValTagPai = 462
+
+&CteValCodigo = 464
+&CteValTag = 'infServVinc'
+&CteValTagDescricao = 'Informações do Serviço Vinculado a Multimodal'
+&CteValRegEx = ''
+&CteValCodMsgErro = 559
+&CteValMsgErro = ''
+&CteValTagPai = 241
+
+&CteValCodigo = 465
+&CteValTag = 'infCTeMultimodal'
+&CteValTagDescricao = 'informações do CT-e multimodal vinculado'
+&CteValRegEx = ''
+&CteValCodMsgErro = 560
+&CteValMsgErro = ''
+&CteValTagPai = 464
+
+&CteValCodigo = 466
+&CteValTag = 'chCTeMultimodal'
+&CteValTagDescricao = 'Chave de acesso do CT-e Multimodal'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e multimodal não possui um valor válido. Para [chCTeMultimodal] informe um número de 44 dígitos.'
+&CteValTagPai = 465
+
+&CteValCodigo = 467
+&CteValTag = 'infCteComp'
+&CteValTagDescricao = 'Detalhamento do CT-e complementado'
+&CteValRegEx = ''
+&CteValCodMsgErro = 339
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 468
+&CteValTag = 'chCTe'
+&CteValTagDescricao = 'Chave do CT-e complementado'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e  complementado não possui um valor válido. Para [chCTe] informe um número de 44 dígitos.'
+&CteValTagPai = 467
+
+&CteValCodigo = 469
+&CteValTag = 'infCteAnu'
+&CteValTagDescricao = 'Detalhamento do CT-e do tipo Anulação'
+&CteValRegEx = ''
+&CteValCodMsgErro = ''
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 470
+&CteValTag = 'chCte'
+&CteValTagDescricao = 'Chave de acesso do CT-e original a ser anulado e substituído'
+&CteValRegEx = '^[0-9]{44}$'
+&CteValCodMsgErro = 66
+&CteValMsgErro = '[#inv0066] Chave de acesso do CT-e original a ser anulado e substituído não possui um valor válido. Para [chCTe] informe um número de 44 dígitos.'
+&CteValTagPai = 469
+
+&CteValCodigo = 471
+&CteValTag = 'dEmi'
+&CteValTagDescricao = 'Data de emissão da declaração do tomador não contribuinte do ICMS'
+&CteValRegEx = '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))'
+&CteValCodMsgErro = 50
+&CteValMsgErro = '[#inv0050] Data de Emissão do detalhamento do CT-e do tipo anulação não possui um valor válido. Para [dEmi] informe uma data no formado AAAA-MM-DD'
+&CteValTagPai = 469
+
+&CteValCodigo = 472
+&CteValTag = 'autXML'
+&CteValTagDescricao = 'Autorizados para download do XML do DF-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 341
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 473
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'Número do CNPJ'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 472
+
+&CteValCodigo = 474
+&CteValTag = 'CPF'
+&CteValTagDescricao = 'Número do CPF'
+&CteValRegEx = '^[0-9]{11}$'
+&CteValCodMsgErro = 39
+&CteValMsgErro = '[#inv0039] Número do CPF não possui um valor válido. Para [CPF] informe somente os 11 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 472
+
+&CteValCodigo = 475
+&CteValTag = 'infRespTec'
+&CteValTagDescricao = 'Informações do Responsável Técnico pela emissão do DF-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 561
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 476
+&CteValTag = 'CNPJ'
+&CteValTagDescricao = 'CNPJ da pessoa jurídica responsável técnica pelo sistema utilizado na emissão do documento fiscal eletrônico'
+&CteValRegEx = '^[0-9]{14}$'
+&CteValCodMsgErro = 21
+&CteValMsgErro = '[#inv0021] Número do CNPJ do responsável técnico não possui um valor válido. Para [CNPJ] informe somente os 14 números e complete com zeros a esquerda, se necessário.'
+&CteValTagPai = 475
+
+&CteValCodigo = 477
+&CteValTag = 'xContato'
+&CteValTagDescricao = 'Nome da pessoa a ser contatada'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 562
+&CteValMsgErro = '[#inv0562] Nome da pessoa a ser contatada não possui um valor válido. Para [xContato] informar o nome da pessoa a ser contatada na empresa desenvolvedora do sistema utilizado na emissão do documento fiscal eletrônico. No caso de pessoa física, informar o respectivo nome.'
+&CteValTagPai = 475
+
+&CteValCodigo = 478
+&CteValTag = 'email'
+&CteValTagDescricao = 'Email da pessoa jurídica a ser contatada'
+&CteValRegEx = '^[^@]+@[^\.]+\..+$'
+&CteValCodMsgErro = 124
+&CteValMsgErro = '[#inv0124] Endereço de email da pessoa jurídica a ser contatada não possui um valor válido. Para [email] utilize o formato usuario@dominio.com'
+&CteValTagPai = 475
+
+&CteValCodigo = 479
+&CteValTag = 'fone'
+&CteValTagDescricao = 'Telefone da pessoa jurídica a ser contatada'
+&CteValRegEx = '^[0-9]{7,12}$'
+&CteValCodMsgErro = 136
+&CteValMsgErro = '[#inv0136] Telefone da pessoa jurídica a ser contatada não possui um valor válido. Para [fone] informe somente números, ente 7 a 12 dígitos. Obs.:         Preencher com o Código DDD + número do telefone. '
+&CteValTagPai = 475
+
+&CteValCodigo = 480
+&CteValTag = 'idCSRT'
+&CteValTagDescricao = 'Identificador do código de segurança do responsável técnico'
+&CteValRegEx = '^[0-9]{3}$'
+&CteValCodMsgErro = 563
+&CteValMsgErro = '[#inv0563] Identificador do código de segurança do responsável técnico não possui um valor válido. Para [idCSRT] informe 3 dígitos.'
+&CteValTagPai = 475
+
+&CteValCodigo = 481
+&CteValTag = 'hashCSRT'
+&CteValTagDescricao = 'Hash do token do código de segurança do responsável técnico'
+&CteValRegEx = '^[a-fA-F0-9]{20}$'
+&CteValCodMsgErro = 564
+&CteValMsgErro = '[#inv0564] Hash do token do código de segurança do responsável técnico não possui um valor válido. O [hashCSRT] é o resultado das funções SHA-1 e base64 do token CSRT fornecido pelo fisco + chave de acesso do DF-e. '
+&CteValTagPai = 475
+
+&CteValCodigo = 482
+&CteValTag = 'infSolicNFF'
+&CteValTagDescricao = 'Grupo de informações do pedido de emissão da Nota Fiscal Fácil'
+&CteValRegEx = ''
+&CteValCodMsgErro = 565
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 483
+&CteValTag = 'xSolic'
+&CteValTagDescricao = 'Solicitação do pedido de emissão da NFF.'
+&CteValRegEx = '^[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}$'
+&CteValCodMsgErro = 566
+&CteValMsgErro = '[#inv0566] Solicitação do pedido de emissão da NFF não possui um valor válido. O [xSolic] será preenchido com a totalidade de campos informados no aplicativo emissor serializado.'
+&CteValTagPai = 482
+
+&CteValCodigo = 484
+&CteValTag = 'infCTeSupl'
+&CteValTagDescricao = 'Informações suplementares do CT-e'
+&CteValRegEx = ''
+&CteValCodMsgErro = 568
+&CteValMsgErro = ''
+&CteValTagPai = 2
+
+&CteValCodigo = 485
+&CteValTag = 'qrCodCTe'
+&CteValTagDescricao = 'Texto com o QR-Code impresso no DACTE'
+&CteValRegEx = '((HTTPS?|https?)://.*\?chCTe=[0-9]{44}&amp;tpAmb=[1-2](&amp;sign=[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1})?)'
+&CteValCodMsgErro = 569
+&CteValMsgErro = '[#inv0569] Texto com o QR-Code impresso no DACTE não possui um valor válido. Para [qrCodCTe] caracteres entre 50 e 1000 dígitos'
+&CteValTagPai = 484
+
